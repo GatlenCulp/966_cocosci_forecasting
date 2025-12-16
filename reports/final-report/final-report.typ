@@ -4,18 +4,10 @@
 
 #show: cogsci.with(
   title: [
-    Modeling the Evolution of Beliefs in Abstract Geopolitical Forecasting with Hidden Markov Models\
-    // [Note: WIP Draft, Uploading in Advance in Case Something Happens. Will upload a complete one later.]\
+    A Hidden Markov Model of Belief Evolution in Geopolitical Forecasting\
     #text(size: 10pt)[_9.66 Self-Selected Project_]
   ],
   author-info: format-authors(
-    // authors: (
-    //   (name: [Gatlen Culp], email: "gculp@mit.edu", super: [1]),
-    // ),
-    // affiliations: (
-    //   (super: [1], affil: [Massachusetts Institute of Technology]),
-    //   // Undergraduate, Taking 9.66
-    // ),
     (
       (name: [Gatlen Culp], email: "gculp@mit.edu"),
     ),
@@ -23,24 +15,12 @@
   ),
 
   abstract: [
-    We study belief evolution in geopolitical forecasting using survey forecasts from the Good Judgement Project (2011--2015). After filtering to non-voided binary questions and baseline (first) forecasts, the dataset contains 382 individual forecasting problems and 323,847 baseline probability reports. We first examine whether forecasts exhibit measurable cross-question dependency (via correlations) and outline a cognitive modeling approach in which a forecaster's latent belief state evolves over time and is imperfectly observed through sparse reports, formalized as a Hidden Markov Model. We conclude by proposing train/test split strategies and predictive baselines for comparing individual and collective models.
+    Geopolitical forecasting is a vital tool for world affairs, but is poorly understood as a concept in human psychology. I outline a simple cognitive Markov Chain Model of evolving belief states, wherein one's beliefs evolve according to a individually and  time-invariant transition function. I identify and outline a geopolitical forecasting dataset generated from volunteer reporting and demonstrate that forecasts exhibit measurable cross-question correlations, motivating better understanding of the underlying relationships. After filtering, the dataset contains 382 individual forecasting problems and 323,847 baseline probability reports. To formally study and generate the parameters for this Markov Chain model from the dataset, I propose a method of using volunteer-reported forecasts as noisy observations in a Hidden Markov Model extension of the original. I conclude by proposing train/test split strategies, baselines for evaluating the model, and methods of analysis for understanding abstract evolving beliefs and specific limitations of the simple model.
   ],
-  keywords: ("forecasting", "belief perseverance", "hidden markov models", "cognitive modeling"),
+  keywords: ("forecasting", "geopolitics", "hidden markov models", "cognitive modeling"),
   anonymize: false,
   hyphenate: true,
 )
-
-// #set heading(numbering: "1)")
-// TODO: Convert to cog-sci paper format https://www.overleaf.com/project/5c3e2252b41f9b6e9c49c524
-
-// Begin semi-bs final report with the graphs, data, and motivation that I have so far to complete by 5 PM so I at least have something submitted for the time being. In particular, in this revision I want to
-
-// + The most active user's (user 3257) forecasting submissions
-// + Provide a graph of the average priors in the same format as the `user_timeline` #footnote[want to make sure that you're actually predicting the user's specific estimates, not just everyone's priors, actually do you want this or do you want measured against the actual outcome? I'm not terribly sure, *wisdom of the crowd says that these should work out to about equal*. For now, I don't want to produce too many graphs so average priors are probably a pretty good metric. Also they're labeled as correct / incorrect anyways so we can see.
-
-//     Later I would like to also *subtract the differences in priors to get the squared error* (there's some statistic they specifically used in the GJP that might be relevant). Then you can *claim that this is the type of behavior you better want to explain*.
-
-//     Want to color the dot with the result of their estimation and the bar itself with the prior. Not just recolor entirely.]
 
 \
 #align(center)[
@@ -50,7 +30,6 @@
 \
 = Introduction
 
-// == Motivation
 Forecasting -- making informed predictions about the future #footnote[Typically on the order of months to years] -- is simultaneously extremely difficult and extremely valuable. Forecasting is used constantly in our personal lives and used professionally by consultants, politicians, analysts, entrepreneurs, and more. Forecasting geopolitical events and responses is critically important for international and domestic peace, prosperity, and stability -- underestimating the likelihood is an error measured in human lives. #footnote[In addition to individual forecasting, there is much room for improvement in group forecasting and communication. E.g. the 2011 Abbottabad raid of the U.S. into Pakistan was rife with miscommunications about the likelihood of Osama bin Laden's location within the country, straining U.S.-Pakistan relations and not completely eliminating al-Qaeda. @tetlockSuperforecastingArtScience2015]
 
 From an evolutionary psychology perspective, forecasting had limited usefulness. Predicting potential personal emergencies (such as hunting accidents) is useful for rationing food preserves and improving fitness, but forecasting more abstract concepts (such as whether China will invade Taiwan or whether Serbia will be officially granted EU candidacy) would rarely improve fitness.
@@ -61,9 +40,6 @@ One of the most fundamental tools to improve any skill is to understand our curr
 #footnote[
   Other reasons why understanding human forecasting is interesting: (A) We may be able to build algorithms around it. For example, more efficiently sampling and de-biasing predictions about the future provided by LLMs. (B) Beyond improving forecasting, understanding how others perceive the future (e.g. citizens) may itself be valuable information in forecasting.
 ]
-
-An important starting point is understanding not just how individuals update their beliefs in response to new information, but how individuals update their beliefs as they think more about the future. In particular, I decided to model the following: when people forecast whether or not an event will occur in the future, how does this affect their beliefs about other events they have yet to consider? And does the order in which they consider these events "stick", or become hard to change? If they believe a far-off event is likely to occur, might they be averse to revising their belief even as they later consider related events happening beforehand?
-#footnote[For example, I have been talking with people about the consequences of advanced AI up to and including superintelligent AI before ChatGPT was released. I find that many people find it improbable, not from forward-chaining events from today but from some bias towards a future that they are familiar with, and backwards-chain from that future to discount the probability of a much crazier future (may be an availability heuristic)]
 
 // To study this, I select 6 related events (e.g. the dataset has 22 related to the North Korean military alone) and represent them on a branching timeline (one branch for yes, one branch for no), ordered by their resolution times. I will then simulate MCMC with limited iterations on the tree for each respondent, representing "thinking about events most closely related to the one they are forecasting" in the style of @liederBurninBiasRationality2012. I will then analyze the effect of this sampling method against forward chaining from the present and through each intermediate event.
 
@@ -296,17 +272,28 @@ In this paper, I introduce the importance of further developing the field of com
 
 While I did not have the time to implement my procedure and collect data due to spending a considerable amount of time parsing, filtering, and understanding the GJP dataset that I had plan to fit and test my model on, I believe this project is in line with the spirit of computational modeling and analysis that was focused on in the majority of the 9.66 Computational Cognitive Science class.
 
-In my original project I had intended to simulate MCMC with limited iterations on the tree for each respondent, representing "thinking about events most closely related to the one they are forecasting" in the style of @liederBurninBiasRationality2012. Then analyze the effect of this sampling method against forward chaining from the present and through each intermediate event.
 
-// #pagebreak()
 
 = Appendix
+
+== Original Scope
+
+For context, here is some information about the original scope of my project:
+
+An important starting point is understanding not just how individuals update their beliefs in response to new information, but how individuals update their beliefs as they think more about the future. In particular, I decided to model the following: when people forecast whether or not an event will occur in the future, how does this affect their beliefs about other events they have yet to consider? And does the order in which they consider these events "stick", or become hard to change? If they believe a far-off event is likely to occur, might they be averse to revising their belief even as they later consider related events happening beforehand?
+#footnote[For example, I have been talking with people about the consequences of advanced AI up to and including superintelligent AI before ChatGPT was released. I find that many people find it improbable, not from forward-chaining events from today but from some bias towards a future that they are familiar with, and backwards-chain from that future to discount the probability of a much crazier future (may be an availability heuristic)]
+
+I had intended to simulate MCMC with limited iterations, representing "thinking about events most closely related to the one they are forecasting" in the style of @liederBurninBiasRationality2012. Then analyze the effect of this sampling method against forward chaining from the present and through each intermediate event.
+
+== IFP Timeline
 
 #figure(
   image("../figures/gjp/ifp_timeline/ifp_timeline.pdf", fit: "contain", height: 550pt),
   caption: [Timeline of all IFPs. The x-axis is time. Each horizontal bar represents an IFP: the left end is when it opened for forecasts and the right end is when it closed, either by deadline (e.g. "Will the city of Kiev be bombed by Russia by Nov 11th, 2012?") or by resolution (e.g. if Russia bombed Kiev on Oct 11th, 2012).],
   // TODO: Give this plot more vertical spacing and vertical zoom. Remove labels for readability.
 ) <fig:ifp-timeline>
+
+== Arbitrary Correlation Coefficients Matrix
 
 #figure(
   image("/reports/figures/gjp/corr_matrix/corr_matrix.pdf"),
@@ -322,9 +309,11 @@ In my original project I had intended to simulate MCMC with limited iterations o
 
 *Author Contributions*: This project was my original idea, heavily inspired by the book _Superforecasting_. I am an MIT Undergraduate and received no outside assistance. This is not related to any of my other work and would not be done otherwise. However, it may include some interesting findings for future research or work I may do. (See Additional Note on Motivation)
 
-*AI Use*: I did not use AI for any of the writing in this report other than for helping me generate some of the non-Python diagrams I used in explaining my methodology (I had completely described and understood the diagram I wanted, implementation was what I needed help with). I had also used to to last-minute generate the abstract and the notation reference.
+*AI Use*: For the report, I had used AI to generate the Hidden Markov Model diagram and notation reference (both of which I had described and edited personally).
 
-As for the code, I used AI for debugging (improper API-usage) and refactoring (breaking up large functions). Because I decided to use unfamiliar data-manipulation and data-visualization libraries (`polars` and `altair` respectively), I used AI extensively to understand and describe the API calls needed to perform an operation. Nowhere in my code is there logic I personally did not personally design. I had used Claude 4.5 Sonnet/Opus or GPT-5.2.
+As for the code, I used AI for debugging (improper API-usage) and refactoring (breaking up large functions). Because I decided to use unfamiliar data-manipulation and data-visualization libraries (`polars` and `altair` respectively), I used AI extensively to understand and describe the API calls needed to perform an operation. Nowhere in my code is there logic I personally did not personally design.
+
+I had used Claude 4.5 Sonnet/Opus or GPT-5.2.
 
 *Additional Note on Motivation*: The LLM sampling mentioned in a footnote is a large component of my underlying motivation. I know the authors behind AI-2027 and they are interested in developing better geopolitical forecasting tools and have a small team working on something related. Forecasting and logically stepping through events is an extremely time consuming process and LLMs aren't great at doing this out of the box. I was originally interested in GenLM for my mini project as some way to tie LLMs to quantitative forecasts or parameters representing the modeler's assumptions. Link to my notes related project idea: https://gatlen.notion.site/automated-wargames?source=copy_link
 
