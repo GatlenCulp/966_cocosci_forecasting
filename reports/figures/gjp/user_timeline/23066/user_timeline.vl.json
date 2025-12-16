@@ -1,0 +1,1045 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "symbolSize": 160,
+      "titleFontSize": 14
+    },
+    "title": {
+      "fontSize": 18
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 10
+      },
+      "encoding": {
+        "color": {
+          "field": "is_correct",
+          "legend": {
+            "title": "Correct?"
+          },
+          "scale": {
+            "domain": [
+              true,
+              false
+            ],
+            "range": [
+              "#2ca02c",
+              "#d62728"
+            ]
+          },
+          "type": "nominal"
+        },
+        "opacity": {
+          "field": "confidence",
+          "legend": {
+            "title": "Confidence"
+          },
+          "scale": {
+            "domain": [
+              0,
+              1
+            ],
+            "range": [
+              0.2,
+              1.0
+            ]
+          },
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "ifp_id",
+            "title": "IFP",
+            "type": "nominal"
+          },
+          {
+            "field": "short_title",
+            "title": "Title",
+            "type": "nominal"
+          },
+          {
+            "field": "date_start",
+            "title": "Opened",
+            "type": "temporal"
+          },
+          {
+            "field": "date_closed",
+            "title": "Closed",
+            "type": "temporal"
+          },
+          {
+            "field": "outcome",
+            "title": "Outcome",
+            "type": "nominal"
+          },
+          {
+            "field": "is_correct",
+            "title": "Correct?",
+            "type": "nominal"
+          },
+          {
+            "field": "confidence",
+            "format": ".3f",
+            "title": "Confidence",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "date_start",
+          "title": "Date",
+          "type": "temporal"
+        },
+        "x2": {
+          "field": "date_closed"
+        },
+        "y": {
+          "axis": {
+            "domain": false,
+            "labels": false,
+            "ticks": false
+          },
+          "field": "y_idx",
+          "scale": {
+            "domain": [
+              -0.5,
+              51.5
+            ],
+            "nice": false,
+            "reverse": true
+          },
+          "title": null,
+          "type": "quantitative"
+        }
+      },
+      "name": "view_79842b4f5ecf02b8_0"
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "color": "white",
+        "dx": 3,
+        "fontSize": 8
+      },
+      "encoding": {
+        "text": {
+          "field": "short_title",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "date_start",
+          "type": "temporal"
+        },
+        "y": {
+          "axis": {
+            "domain": false,
+            "labels": false,
+            "ticks": false
+          },
+          "field": "y_idx",
+          "scale": {
+            "domain": [
+              -0.5,
+              51.5
+            ],
+            "nice": false,
+            "reverse": true
+          },
+          "title": null,
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 60,
+        "stroke": "black"
+      },
+      "encoding": {
+        "color": {
+          "field": "is_correct",
+          "legend": null,
+          "scale": {
+            "domain": [
+              true,
+              false
+            ],
+            "range": [
+              "#2ca02c",
+              "#d62728"
+            ]
+          },
+          "type": "nominal"
+        },
+        "opacity": {
+          "field": "confidence",
+          "legend": null,
+          "scale": {
+            "domain": [
+              0,
+              1
+            ],
+            "range": [
+              0.2,
+              1.0
+            ]
+          },
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "ifp_id",
+            "title": "IFP",
+            "type": "nominal"
+          },
+          {
+            "field": "short_title",
+            "title": "Title",
+            "type": "nominal"
+          },
+          {
+            "field": "baseline_time",
+            "title": "Baseline forecast time",
+            "type": "temporal"
+          },
+          {
+            "field": "baseline_top_option",
+            "title": "Top option",
+            "type": "nominal"
+          },
+          {
+            "field": "baseline_top_prob",
+            "format": ".3f",
+            "title": "Top prob",
+            "type": "quantitative"
+          },
+          {
+            "field": "baseline_forecast",
+            "title": "Baseline forecast",
+            "type": "nominal"
+          },
+          {
+            "field": "date_start",
+            "title": "Opened",
+            "type": "temporal"
+          },
+          {
+            "field": "date_closed",
+            "title": "Closed",
+            "type": "temporal"
+          },
+          {
+            "field": "outcome",
+            "title": "Outcome",
+            "type": "nominal"
+          },
+          {
+            "field": "is_correct",
+            "title": "Correct?",
+            "type": "nominal"
+          }
+        ],
+        "x": {
+          "field": "baseline_time",
+          "title": null,
+          "type": "temporal"
+        },
+        "y": {
+          "axis": {
+            "domain": false,
+            "labels": false,
+            "ticks": false
+          },
+          "field": "y_idx",
+          "scale": {
+            "domain": [
+              -0.5,
+              51.5
+            ],
+            "nice": false,
+            "reverse": true
+          },
+          "title": null,
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-3a00eaab385c06561a36079c00a9c410"
+  },
+  "height": 800,
+  "params": [
+    {
+      "name": "param_db82be42624d4632",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x"
+        ]
+      },
+      "bind": "scales",
+      "views": [
+        "view_79842b4f5ecf02b8_0"
+      ]
+    },
+    {
+      "name": "param_e9b61157fc812227",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "y"
+        ]
+      },
+      "bind": "scales",
+      "views": [
+        "view_79842b4f5ecf02b8_0"
+      ]
+    }
+  ],
+  "title": "User 23066 \u2014 IFP timeline (Open \u2192 Closed)",
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-3a00eaab385c06561a36079c00a9c410": [
+      {
+        "y_idx": 0,
+        "ifp_id": "1394-0",
+        "short_title": "China: Second Thomas Shoal",
+        "date_start": "2014-03-12T00:00:00",
+        "date_closed": "2014-12-30T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-08-09T09:27:46",
+        "baseline_forecast": "a: 0.5, b: 0.5",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.5,
+        "is_correct": true,
+        "confidence": 0.5
+      },
+      {
+        "y_idx": 1,
+        "ifp_id": "1399-2",
+        "short_title": "Quebec Referendum",
+        "date_start": "2014-04-02T00:00:00",
+        "date_closed": "2014-12-30T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-08-09T09:59:21",
+        "baseline_forecast": "a: 0.15, b: 0.85",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.85,
+        "is_correct": true,
+        "confidence": 0.85
+      },
+      {
+        "y_idx": 2,
+        "ifp_id": "1244-0",
+        "short_title": "India/Brazil UNSC",
+        "date_start": "2013-08-28T00:00:00",
+        "date_closed": "2015-02-28T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-08-10T09:06:19",
+        "baseline_forecast": "a: 0.25, b: 0.75",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.75,
+        "is_correct": true,
+        "confidence": 0.75
+      },
+      {
+        "y_idx": 3,
+        "ifp_id": "1410-0",
+        "short_title": "Scotland Referendum",
+        "date_start": "2014-08-20T00:00:00",
+        "date_closed": "2014-09-18T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-08-20T13:12:26",
+        "baseline_forecast": "a: 0.25, b: 0.75",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.75,
+        "is_correct": true,
+        "confidence": 0.75
+      },
+      {
+        "y_idx": 4,
+        "ifp_id": "1409-0",
+        "short_title": "Brazil Presidential Runoff",
+        "date_start": "2014-08-20T00:00:00",
+        "date_closed": "2014-10-05T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-08-21T16:06:41",
+        "baseline_forecast": "a: 0.4, b: 0.6",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.6,
+        "is_correct": false,
+        "confidence": 0.6
+      },
+      {
+        "y_idx": 5,
+        "ifp_id": "1415-0",
+        "short_title": "Russia/Ukraine Confrontation",
+        "date_start": "2014-08-20T00:00:00",
+        "date_closed": "2014-08-26T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-08-22T17:07:47",
+        "baseline_forecast": "a: 0.42, b: 0.58",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.58,
+        "is_correct": false,
+        "confidence": 0.58
+      },
+      {
+        "y_idx": 6,
+        "ifp_id": "1413-0",
+        "short_title": "Kurdistan Referendum",
+        "date_start": "2014-08-20T00:00:00",
+        "date_closed": "2014-12-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-08-24T08:15:55",
+        "baseline_forecast": "a: 0.55, b: 0.45",
+        "baseline_top_option": "a",
+        "baseline_top_prob": 0.55,
+        "is_correct": false,
+        "confidence": 0.55
+      },
+      {
+        "y_idx": 7,
+        "ifp_id": "1411-2",
+        "short_title": "N.Korea Missile Test",
+        "date_start": "2014-08-20T00:00:00",
+        "date_closed": "2015-05-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-08-24T13:13:51",
+        "baseline_forecast": "a: 0.35, b: 0.65",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.65,
+        "is_correct": true,
+        "confidence": 0.65
+      },
+      {
+        "y_idx": 8,
+        "ifp_id": "1414-0",
+        "short_title": "Arctic Sea Ice",
+        "date_start": "2014-08-20T00:00:00",
+        "date_closed": "2014-09-15T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-08-25T11:08:37",
+        "baseline_forecast": "a: 0.4, b: 0.6",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.6,
+        "is_correct": true,
+        "confidence": 0.6
+      },
+      {
+        "y_idx": 9,
+        "ifp_id": "1412-0",
+        "short_title": "TOPIX Closing Value",
+        "date_start": "2014-08-20T00:00:00",
+        "date_closed": "2014-10-15T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-08-30T10:41:47",
+        "baseline_forecast": "a: 0.13, b: 0.87",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.87,
+        "is_correct": false,
+        "confidence": 0.87
+      },
+      {
+        "y_idx": 10,
+        "ifp_id": "1418-0",
+        "short_title": "Afghan Bilateral Security Agreement",
+        "date_start": "2014-08-27T00:00:00",
+        "date_closed": "2014-09-29T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-08-30T10:59:26",
+        "baseline_forecast": "a: 0.25, b: 0.75",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.75,
+        "is_correct": false,
+        "confidence": 0.75
+      },
+      {
+        "y_idx": 11,
+        "ifp_id": "1417-0",
+        "short_title": "Kim Jong Un meeting head of state ",
+        "date_start": "2014-08-27T00:00:00",
+        "date_closed": "2015-05-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-08-31T11:51:43",
+        "baseline_forecast": "a: 0.15, b: 0.85",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.85,
+        "is_correct": true,
+        "confidence": 0.85
+      },
+      {
+        "y_idx": 12,
+        "ifp_id": "1420-0",
+        "short_title": "China ADIZ in South China Sea",
+        "date_start": "2014-08-27T00:00:00",
+        "date_closed": "2015-05-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-08-31T16:10:20",
+        "baseline_forecast": "a: 0.35, b: 0.65",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.65,
+        "is_correct": true,
+        "confidence": 0.65
+      },
+      {
+        "y_idx": 13,
+        "ifp_id": "1416-0",
+        "short_title": "North Korea nuclear device",
+        "date_start": "2014-08-27T00:00:00",
+        "date_closed": "2014-12-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-09-03T16:58:44",
+        "baseline_forecast": "a: 0.38, b: 0.62",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.62,
+        "is_correct": true,
+        "confidence": 0.62
+      },
+      {
+        "y_idx": 14,
+        "ifp_id": "1421-0",
+        "short_title": "New Development Bank loans",
+        "date_start": "2014-08-27T00:00:00",
+        "date_closed": "2015-05-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-09-03T17:21:32",
+        "baseline_forecast": "a: 0.16, b: 0.84",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.84,
+        "is_correct": true,
+        "confidence": 0.84
+      },
+      {
+        "y_idx": 15,
+        "ifp_id": "1419-2",
+        "short_title": "WTO Trade Facilitation Agreement",
+        "date_start": "2014-08-27T00:00:00",
+        "date_closed": "2014-11-27T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-09-05T06:32:46",
+        "baseline_forecast": "a: 0.4, b: 0.6",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.6,
+        "is_correct": false,
+        "confidence": 0.6
+      },
+      {
+        "y_idx": 16,
+        "ifp_id": "1428-0",
+        "short_title": "Sharif vacate office",
+        "date_start": "2014-09-03T00:00:00",
+        "date_closed": "2014-12-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-09-07T07:26:58",
+        "baseline_forecast": "a: 0.25, b: 0.75",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.75,
+        "is_correct": true,
+        "confidence": 0.75
+      },
+      {
+        "y_idx": 17,
+        "ifp_id": "1427-0",
+        "short_title": "Russia annexation of Ukraine",
+        "date_start": "2014-09-03T00:00:00",
+        "date_closed": "2014-12-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-09-07T07:52:32",
+        "baseline_forecast": "a: 0.35, b: 0.65",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.65,
+        "is_correct": true,
+        "confidence": 0.65
+      },
+      {
+        "y_idx": 18,
+        "ifp_id": "1429-0",
+        "short_title": "Syria intervention ",
+        "date_start": "2014-09-03T00:00:00",
+        "date_closed": "2014-09-22T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-09-08T18:23:42",
+        "baseline_forecast": "a: 0.6, b: 0.4",
+        "baseline_top_option": "a",
+        "baseline_top_prob": 0.6,
+        "is_correct": true,
+        "confidence": 0.6
+      },
+      {
+        "y_idx": 19,
+        "ifp_id": "1424-0",
+        "short_title": "Dollar-ruble exchange rate",
+        "date_start": "2014-09-03T00:00:00",
+        "date_closed": "2014-09-15T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-09-13T14:06:58",
+        "baseline_forecast": "a: 0.35, b: 0.65",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.65,
+        "is_correct": false,
+        "confidence": 0.65
+      },
+      {
+        "y_idx": 20,
+        "ifp_id": "1425-0",
+        "short_title": "Gulf ambassadors",
+        "date_start": "2014-09-03T00:00:00",
+        "date_closed": "2014-11-17T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-09-13T14:13:00",
+        "baseline_forecast": "a: 0.12, b: 0.88",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.88,
+        "is_correct": false,
+        "confidence": 0.88
+      },
+      {
+        "y_idx": 21,
+        "ifp_id": "1423-0",
+        "short_title": "China peak carbon",
+        "date_start": "2014-09-03T00:00:00",
+        "date_closed": "2014-11-11T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-09-13T14:20:40",
+        "baseline_forecast": "a: 0.25, b: 0.75",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.75,
+        "is_correct": false,
+        "confidence": 0.75
+      },
+      {
+        "y_idx": 22,
+        "ifp_id": "1434-0",
+        "short_title": "South Stream Resumption",
+        "date_start": "2014-09-17T00:00:00",
+        "date_closed": "2014-12-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-09-23T07:16:06",
+        "baseline_forecast": "a: 0.5, b: 0.5",
+        "baseline_top_option": "a",
+        "baseline_top_prob": 0.5,
+        "is_correct": false,
+        "confidence": 0.5
+      },
+      {
+        "y_idx": 23,
+        "ifp_id": "1432-0",
+        "short_title": "VSTOXX index",
+        "date_start": "2014-09-17T00:00:00",
+        "date_closed": "2014-10-09T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-09-24T17:52:41",
+        "baseline_forecast": "a: 0.35, b: 0.65",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.65,
+        "is_correct": false,
+        "confidence": 0.65
+      },
+      {
+        "y_idx": 24,
+        "ifp_id": "1435-0",
+        "short_title": "NATO MAP",
+        "date_start": "2014-09-17T00:00:00",
+        "date_closed": "2015-05-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-09-24T18:19:06",
+        "baseline_forecast": "a: 0.35, b: 0.65",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.65,
+        "is_correct": true,
+        "confidence": 0.65
+      },
+      {
+        "y_idx": 25,
+        "ifp_id": "1430-0",
+        "short_title": "Lethal confrontation in South China Sea",
+        "date_start": "2014-09-17T00:00:00",
+        "date_closed": "2015-05-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-09-30T17:31:56",
+        "baseline_forecast": "a: 0.2, b: 0.8",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.8,
+        "is_correct": true,
+        "confidence": 0.8
+      },
+      {
+        "y_idx": 26,
+        "ifp_id": "1433-0",
+        "short_title": "Oil volatility index",
+        "date_start": "2014-09-17T00:00:00",
+        "date_closed": "2014-10-07T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-10-04T10:33:39",
+        "baseline_forecast": "a: 0.3, b: 0.7",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.7,
+        "is_correct": false,
+        "confidence": 0.7
+      },
+      {
+        "y_idx": 27,
+        "ifp_id": "1442-0",
+        "short_title": "Ebola in Europe",
+        "date_start": "2014-09-24T00:00:00",
+        "date_closed": "2014-10-06T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-10-04T10:36:01",
+        "baseline_forecast": "a: 0.5, b: 0.5",
+        "baseline_top_option": "a",
+        "baseline_top_prob": 0.5,
+        "is_correct": true,
+        "confidence": 0.5
+      },
+      {
+        "y_idx": 28,
+        "ifp_id": "1440-0",
+        "short_title": "Abbas vacate office",
+        "date_start": "2014-09-24T00:00:00",
+        "date_closed": "2015-05-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-10-04T16:05:31",
+        "baseline_forecast": "a: 0.21, b: 0.79",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.79,
+        "is_correct": true,
+        "confidence": 0.79
+      },
+      {
+        "y_idx": 29,
+        "ifp_id": "1437-0",
+        "short_title": "North Korea ferry",
+        "date_start": "2014-09-24T00:00:00",
+        "date_closed": "2015-05-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-10-16T18:47:45",
+        "baseline_forecast": "a: 0.1, b: 0.9",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.9,
+        "is_correct": true,
+        "confidence": 0.9
+      },
+      {
+        "y_idx": 30,
+        "ifp_id": "1450-0",
+        "short_title": "OPEC Cut Output",
+        "date_start": "2014-10-15T00:00:00",
+        "date_closed": "2014-11-27T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-10-18T09:06:39",
+        "baseline_forecast": "a: 0.1, b: 0.9",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.9,
+        "is_correct": true,
+        "confidence": 0.9
+      },
+      {
+        "y_idx": 31,
+        "ifp_id": "1449-0",
+        "short_title": "China Police in Hong Kong",
+        "date_start": "2014-10-15T00:00:00",
+        "date_closed": "2014-11-30T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-10-18T09:14:59",
+        "baseline_forecast": "a: 0.3, b: 0.7",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.7,
+        "is_correct": true,
+        "confidence": 0.7
+      },
+      {
+        "y_idx": 32,
+        "ifp_id": "1461-0",
+        "short_title": "Iran/Pakistan Lethal confrontation  ",
+        "date_start": "2014-10-29T00:00:00",
+        "date_closed": "2014-12-14T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-11-02T11:14:09",
+        "baseline_forecast": "a: 0.25, b: 0.75",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.75,
+        "is_correct": true,
+        "confidence": 0.75
+      },
+      {
+        "y_idx": 33,
+        "ifp_id": "1454-0",
+        "short_title": "German GDP",
+        "date_start": "2014-10-22T00:00:00",
+        "date_closed": "2014-11-13T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-11-02T11:17:42",
+        "baseline_forecast": "a: 0.3, b: 0.7",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.7,
+        "is_correct": true,
+        "confidence": 0.7
+      },
+      {
+        "y_idx": 34,
+        "ifp_id": "1448-1",
+        "short_title": "Hong Kong Chief Executive",
+        "date_start": "2014-10-15T00:00:00",
+        "date_closed": "2015-01-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-11-08T09:24:30",
+        "baseline_forecast": "a: 0.45, b: 0.55",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.55,
+        "is_correct": true,
+        "confidence": 0.55
+      },
+      {
+        "y_idx": 35,
+        "ifp_id": "1443-0",
+        "short_title": "ISIS Reprisal",
+        "date_start": "2014-10-01T00:00:00",
+        "date_closed": "2014-11-03T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-11-18T08:47:40",
+        "baseline_forecast": "a: 0.5, b: 0.5",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.5,
+        "is_correct": false,
+        "confidence": 0.5
+      },
+      {
+        "y_idx": 36,
+        "ifp_id": "1457-0",
+        "short_title": "Syrian No-Fly Zone",
+        "date_start": "2014-10-22T00:00:00",
+        "date_closed": "2015-02-28T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-11-21T10:53:02",
+        "baseline_forecast": "a: 0.2, b: 0.8",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.8,
+        "is_correct": true,
+        "confidence": 0.8
+      },
+      {
+        "y_idx": 37,
+        "ifp_id": "1460-0",
+        "short_title": "Global temperatures",
+        "date_start": "2014-10-29T00:00:00",
+        "date_closed": "2015-01-15T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-11-25T13:34:03",
+        "baseline_forecast": "a: 0.15, b: 0.85",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.85,
+        "is_correct": false,
+        "confidence": 0.85
+      },
+      {
+        "y_idx": 38,
+        "ifp_id": "1438-0",
+        "short_title": "Russia sanctions to WTO",
+        "date_start": "2014-09-24T00:00:00",
+        "date_closed": "2015-03-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-12-08T14:36:15",
+        "baseline_forecast": "a: 0.3, b: 0.7",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.7,
+        "is_correct": true,
+        "confidence": 0.7
+      },
+      {
+        "y_idx": 39,
+        "ifp_id": "1478-0",
+        "short_title": "China refuse UK lawmakers",
+        "date_start": "2014-12-10T00:00:00",
+        "date_closed": "2015-02-28T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-12-28T16:30:11",
+        "baseline_forecast": "a: 0.15, b: 0.85",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.85,
+        "is_correct": true,
+        "confidence": 0.85
+      },
+      {
+        "y_idx": 40,
+        "ifp_id": "1476-0",
+        "short_title": "Russia credit rating",
+        "date_start": "2014-12-03T00:00:00",
+        "date_closed": "2015-01-26T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2014-12-31T09:28:44",
+        "baseline_forecast": "a: 0.15, b: 0.85",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.85,
+        "is_correct": false,
+        "confidence": 0.85
+      },
+      {
+        "y_idx": 41,
+        "ifp_id": "1480-0",
+        "short_title": "Russia INF Treaty",
+        "date_start": "2014-12-10T00:00:00",
+        "date_closed": "2015-06-09T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2014-12-31T09:32:31",
+        "baseline_forecast": "a: 0.2, b: 0.8",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.8,
+        "is_correct": true,
+        "confidence": 0.8
+      },
+      {
+        "y_idx": 42,
+        "ifp_id": "1494-0",
+        "short_title": "Attack in Europe",
+        "date_start": "2015-01-21T00:00:00",
+        "date_closed": "2015-02-02T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2015-01-25T17:04:15",
+        "baseline_forecast": "a: 0.5, b: 0.5",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.5,
+        "is_correct": false,
+        "confidence": 0.5
+      },
+      {
+        "y_idx": 43,
+        "ifp_id": "1501-0",
+        "short_title": "Netanyahu Speaks to Congress",
+        "date_start": "2015-02-04T00:00:00",
+        "date_closed": "2015-03-02T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2015-02-07T07:42:16",
+        "baseline_forecast": "a: 0.5, b: 0.5",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.5,
+        "is_correct": false,
+        "confidence": 0.5
+      },
+      {
+        "y_idx": 44,
+        "ifp_id": "1496-0",
+        "short_title": "North Korea South Korea talks",
+        "date_start": "2015-01-21T00:00:00",
+        "date_closed": "2015-03-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2015-02-07T07:45:13",
+        "baseline_forecast": "a: 0.21, b: 0.79",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.79,
+        "is_correct": true,
+        "confidence": 0.79
+      },
+      {
+        "y_idx": 45,
+        "ifp_id": "1474-0",
+        "short_title": "Netanyahu Vacate Office",
+        "date_start": "2014-12-03T00:00:00",
+        "date_closed": "2015-04-30T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2015-02-10T06:03:49",
+        "baseline_forecast": "a: 0.11, b: 0.89",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.89,
+        "is_correct": true,
+        "confidence": 0.89
+      },
+      {
+        "y_idx": 46,
+        "ifp_id": "1516-0",
+        "short_title": "Nigeria Elections",
+        "date_start": "2015-03-04T00:00:00",
+        "date_closed": "2015-03-27T00:00:00",
+        "outcome": "a",
+        "baseline_time": "2015-03-07T08:42:29",
+        "baseline_forecast": "a: 0.25, b: 0.75",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.75,
+        "is_correct": false,
+        "confidence": 0.75
+      },
+      {
+        "y_idx": 47,
+        "ifp_id": "1514-0",
+        "short_title": "Saudi Arabia - Iran Meeting",
+        "date_start": "2015-02-18T00:00:00",
+        "date_closed": "2015-05-31T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2015-03-09T08:15:22",
+        "baseline_forecast": "a: 0.2, b: 0.8",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.8,
+        "is_correct": true,
+        "confidence": 0.8
+      },
+      {
+        "y_idx": 48,
+        "ifp_id": "1509-0",
+        "short_title": "Sinai State of Emergency",
+        "date_start": "2015-02-11T00:00:00",
+        "date_closed": "2015-04-25T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2015-03-29T18:05:50",
+        "baseline_forecast": "a: 0.25, b: 0.75",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.75,
+        "is_correct": true,
+        "confidence": 0.75
+      },
+      {
+        "y_idx": 49,
+        "ifp_id": "1527-0",
+        "short_title": "Greece Bailout",
+        "date_start": "2015-03-18T00:00:00",
+        "date_closed": "2015-04-30T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2015-04-04T15:19:37",
+        "baseline_forecast": "a: 0.35, b: 0.65",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.65,
+        "is_correct": true,
+        "confidence": 0.65
+      },
+      {
+        "y_idx": 50,
+        "ifp_id": "1519-0",
+        "short_title": "Iran Russia Weapons Sale ",
+        "date_start": "2015-03-04T00:00:00",
+        "date_closed": "2015-06-09T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2015-04-25T09:50:15",
+        "baseline_forecast": "a: 0.25, b: 0.75",
+        "baseline_top_option": "b",
+        "baseline_top_prob": 0.75,
+        "is_correct": true,
+        "confidence": 0.75
+      },
+      {
+        "y_idx": 51,
+        "ifp_id": "1472-2",
+        "short_title": "TTIP Negotiations",
+        "date_start": "2014-11-19T00:00:00",
+        "date_closed": "2015-06-09T00:00:00",
+        "outcome": "b",
+        "baseline_time": "2015-04-25T09:53:48",
+        "baseline_forecast": "a: 0.6, b: 0.4",
+        "baseline_top_option": "a",
+        "baseline_top_prob": 0.6,
+        "is_correct": false,
+        "confidence": 0.6
+      }
+    ]
+  }
+}

@@ -1,0 +1,3266 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 12
+      },
+      "encoding": {
+        "color": {
+          "field": "date_start",
+          "legend": null,
+          "scale": {
+            "scheme": "viridis"
+          },
+          "type": "temporal"
+        },
+        "tooltip": [
+          {
+            "field": "ifp_id",
+            "title": "IFP",
+            "type": "nominal"
+          },
+          {
+            "field": "short_title",
+            "title": "Title",
+            "type": "nominal"
+          },
+          {
+            "field": "date_start",
+            "title": "Opened",
+            "type": "temporal"
+          },
+          {
+            "field": "date_closed",
+            "title": "Closed",
+            "type": "temporal"
+          }
+        ],
+        "x": {
+          "field": "date_start",
+          "title": "Date",
+          "type": "temporal"
+        },
+        "x2": {
+          "field": "date_closed"
+        },
+        "y": {
+          "axis": null,
+          "field": "y_idx",
+          "title": null,
+          "type": "quantitative"
+        }
+      },
+      "name": "view_2396ee2d70e065e8_0"
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "color": "white",
+        "dx": 3,
+        "fontSize": 8
+      },
+      "encoding": {
+        "text": {
+          "field": "short_title",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "date_start",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "y_idx",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-bdf6b3dc81e12082f4a22556e0157e10"
+  },
+  "height": 400,
+  "params": [
+    {
+      "name": "param_f268f798f41c853e",
+      "select": {
+        "type": "interval"
+      },
+      "bind": "scales",
+      "views": [
+        "view_2396ee2d70e065e8_0"
+      ]
+    }
+  ],
+  "title": "User 546 \u2014 IFP timeline (Open \u2192 Closed)",
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-bdf6b3dc81e12082f4a22556e0157e10": [
+      {
+        "y_idx": 0,
+        "ifp_id": "1004-0",
+        "short_title": "UN-GA recognize Palestine",
+        "date_start": "2011-09-01T00:00:00",
+        "date_closed": "2011-09-30T00:00:00"
+      },
+      {
+        "y_idx": 1,
+        "ifp_id": "1005-0",
+        "short_title": "Ortega win in Nicaragua",
+        "date_start": "2011-09-01T00:00:00",
+        "date_closed": "2011-11-05T00:00:00"
+      },
+      {
+        "y_idx": 2,
+        "ifp_id": "1007-0",
+        "short_title": "confrontation in S. or E. China Sea",
+        "date_start": "2011-09-01T00:00:00",
+        "date_closed": "2011-12-11T00:00:00"
+      },
+      {
+        "y_idx": 3,
+        "ifp_id": "1008-0",
+        "short_title": "WTO membership for Russia",
+        "date_start": "2011-09-01T00:00:00",
+        "date_closed": "2011-12-16T00:00:00"
+      },
+      {
+        "y_idx": 4,
+        "ifp_id": "1001-0",
+        "short_title": "Six-party talks resume",
+        "date_start": "2011-09-01T00:00:00",
+        "date_closed": "2012-01-02T00:00:00"
+      },
+      {
+        "y_idx": 5,
+        "ifp_id": "1003-0",
+        "short_title": "Serbia EU candidacy",
+        "date_start": "2011-09-01T00:00:00",
+        "date_closed": "2012-01-03T00:00:00"
+      },
+      {
+        "y_idx": 6,
+        "ifp_id": "1006-0",
+        "short_title": "Italy restructure debt",
+        "date_start": "2011-09-01T00:00:00",
+        "date_closed": "2012-01-03T00:00:00"
+      },
+      {
+        "y_idx": 7,
+        "ifp_id": "1009-0",
+        "short_title": "Iraq allow US troops to remain",
+        "date_start": "2011-09-01T00:00:00",
+        "date_closed": "2012-01-03T00:00:00"
+      },
+      {
+        "y_idx": 8,
+        "ifp_id": "1002-0",
+        "short_title": "president of Russia",
+        "date_start": "2011-09-01T00:00:00",
+        "date_closed": "2012-05-06T00:00:00"
+      },
+      {
+        "y_idx": 9,
+        "ifp_id": "1014-0",
+        "short_title": "Guatamalan presidential election",
+        "date_start": "2011-09-07T00:00:00",
+        "date_closed": "2011-09-10T00:00:00"
+      },
+      {
+        "y_idx": 10,
+        "ifp_id": "1011-0",
+        "short_title": "Nikkei above 9,500",
+        "date_start": "2011-09-07T00:00:00",
+        "date_closed": "2011-09-29T00:00:00"
+      },
+      {
+        "y_idx": 11,
+        "ifp_id": "1010-0",
+        "short_title": "Crude oil exceed $115",
+        "date_start": "2011-09-07T00:00:00",
+        "date_closed": "2011-09-30T00:00:00"
+      },
+      {
+        "y_idx": 12,
+        "ifp_id": "1012-0",
+        "short_title": "Berlusconi vacate office",
+        "date_start": "2011-09-07T00:00:00",
+        "date_closed": "2011-09-30T00:00:00"
+      },
+      {
+        "y_idx": 13,
+        "ifp_id": "1013-0",
+        "short_title": "Gold exceed $1850",
+        "date_start": "2011-09-07T00:00:00",
+        "date_closed": "2011-09-30T00:00:00"
+      },
+      {
+        "y_idx": 14,
+        "ifp_id": "1015-0",
+        "short_title": "Israel's ambassador to Turkey",
+        "date_start": "2011-09-07T00:00:00",
+        "date_closed": "2011-09-30T00:00:00"
+      },
+      {
+        "y_idx": 15,
+        "ifp_id": "1017-0",
+        "short_title": "Mugabe vacate presidency",
+        "date_start": "2011-09-07T00:00:00",
+        "date_closed": "2011-09-30T00:00:00"
+      },
+      {
+        "y_idx": 16,
+        "ifp_id": "1018-0",
+        "short_title": "Al-Sadr withdraw support of Iraqi govt",
+        "date_start": "2011-09-07T00:00:00",
+        "date_closed": "2011-09-30T00:00:00"
+      },
+      {
+        "y_idx": 17,
+        "ifp_id": "1016-0",
+        "short_title": "CPP majority in Poland",
+        "date_start": "2011-09-07T00:00:00",
+        "date_closed": "2011-10-08T00:00:00"
+      },
+      {
+        "y_idx": 18,
+        "ifp_id": "1022-0",
+        "short_title": "S. African visa for Dalai Lama",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2011-10-06T00:00:00"
+      },
+      {
+        "y_idx": 19,
+        "ifp_id": "1023-0",
+        "short_title": "Ukranian PM guilty on any charges",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2011-10-10T00:00:00"
+      },
+      {
+        "y_idx": 20,
+        "ifp_id": "1021-0",
+        "short_title": "European bailout expansion ratified",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2011-10-13T00:00:00"
+      },
+      {
+        "y_idx": 21,
+        "ifp_id": "1031-0",
+        "short_title": "F-16 sale to Taiwan",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2011-10-21T00:00:00"
+      },
+      {
+        "y_idx": 22,
+        "ifp_id": "1030-0",
+        "short_title": "UN-SC Syria resolution",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2011-10-31T00:00:00"
+      },
+      {
+        "y_idx": 23,
+        "ifp_id": "1020-0",
+        "short_title": "Israel-Palestine peace talks resume",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2011-11-01T00:00:00"
+      },
+      {
+        "y_idx": 24,
+        "ifp_id": "1028-0",
+        "short_title": "Moody's downgrade of Greece",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2011-11-30T00:00:00"
+      },
+      {
+        "y_idx": 25,
+        "ifp_id": "1032-0",
+        "short_title": "Japan decision to buy jets",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2011-11-30T00:00:00"
+      },
+      {
+        "y_idx": 26,
+        "ifp_id": "1027-0",
+        "short_title": "Taiwan presidential election",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2012-01-13T00:00:00"
+      },
+      {
+        "y_idx": 27,
+        "ifp_id": "1025-0",
+        "short_title": "FJ party win 20% in Egypt",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2012-01-20T00:00:00"
+      },
+      {
+        "y_idx": 28,
+        "ifp_id": "1026-0",
+        "short_title": "Kabila remain president of Congo",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2012-01-31T00:00:00"
+      },
+      {
+        "y_idx": 29,
+        "ifp_id": "1024-0",
+        "short_title": "Wade re-election in Senegal",
+        "date_start": "2011-10-04T00:00:00",
+        "date_closed": "2012-03-25T00:00:00"
+      },
+      {
+        "y_idx": 30,
+        "ifp_id": "1042-0",
+        "short_title": "Papademos next PM of Greece",
+        "date_start": "2011-11-08T00:00:00",
+        "date_closed": "2011-11-10T00:00:00"
+      },
+      {
+        "y_idx": 31,
+        "ifp_id": "1041-0",
+        "short_title": "Berlusconi vacate office 2",
+        "date_start": "2011-11-08T00:00:00",
+        "date_closed": "2011-11-12T00:00:00"
+      },
+      {
+        "y_idx": 32,
+        "ifp_id": "1033-0",
+        "short_title": "Tunisian Ennahda party coalition",
+        "date_start": "2011-11-08T00:00:00",
+        "date_closed": "2011-11-15T00:00:00"
+      },
+      {
+        "y_idx": 33,
+        "ifp_id": "1038-0",
+        "short_title": "Al-Kalifa remain King of Bahrain",
+        "date_start": "2011-11-08T00:00:00",
+        "date_closed": "2012-01-31T00:00:00"
+      },
+      {
+        "y_idx": 34,
+        "ifp_id": "1039-0",
+        "short_title": "Al-Assad remain President of Syria",
+        "date_start": "2011-11-08T00:00:00",
+        "date_closed": "2012-01-31T00:00:00"
+      },
+      {
+        "y_idx": 35,
+        "ifp_id": "1034-0",
+        "short_title": "Japan join Trans-Pacific Partnership",
+        "date_start": "2011-11-08T00:00:00",
+        "date_closed": "2012-02-29T00:00:00"
+      },
+      {
+        "y_idx": 36,
+        "ifp_id": "1035-0",
+        "short_title": "UN-SC Iran resolution",
+        "date_start": "2011-11-08T00:00:00",
+        "date_closed": "2012-04-01T00:00:00"
+      },
+      {
+        "y_idx": 37,
+        "ifp_id": "1036-0",
+        "short_title": "Iraq military coup",
+        "date_start": "2011-11-08T00:00:00",
+        "date_closed": "2012-05-31T00:00:00"
+      },
+      {
+        "y_idx": 38,
+        "ifp_id": "1037-0",
+        "short_title": "Greece remain member of EU",
+        "date_start": "2011-11-08T00:00:00",
+        "date_closed": "2012-06-01T00:00:00"
+      },
+      {
+        "y_idx": 39,
+        "ifp_id": "1040-0",
+        "short_title": "Lukashenko remain President of Belarus",
+        "date_start": "2011-11-08T00:00:00",
+        "date_closed": "2012-06-30T00:00:00"
+      },
+      {
+        "y_idx": 40,
+        "ifp_id": "1043-0",
+        "short_title": "Papademos vacate PM of Greece",
+        "date_start": "2011-12-12T00:00:00",
+        "date_closed": "2012-02-29T00:00:00"
+      },
+      {
+        "y_idx": 41,
+        "ifp_id": "1044-0",
+        "short_title": "UK Tehran embassy reopen",
+        "date_start": "2011-12-12T00:00:00",
+        "date_closed": "2012-02-29T00:00:00"
+      },
+      {
+        "y_idx": 42,
+        "ifp_id": "1045-0",
+        "short_title": "Gaddafi trial begin",
+        "date_start": "2011-12-12T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 43,
+        "ifp_id": "1048-0",
+        "short_title": "S&P downgrade EFSF",
+        "date_start": "2011-12-14T00:00:00",
+        "date_closed": "2012-01-16T00:00:00"
+      },
+      {
+        "y_idx": 44,
+        "ifp_id": "1049-0",
+        "short_title": "Zardari vacate President of Pakistan",
+        "date_start": "2011-12-14T00:00:00",
+        "date_closed": "2012-05-31T00:00:00"
+      },
+      {
+        "y_idx": 45,
+        "ifp_id": "1046-0",
+        "short_title": "Australia transfer Uranium to India",
+        "date_start": "2011-12-14T00:00:00",
+        "date_closed": "2012-06-01T00:00:00"
+      },
+      {
+        "y_idx": 46,
+        "ifp_id": "1047-0",
+        "short_title": "Iran invasion by foreign force",
+        "date_start": "2011-12-14T00:00:00",
+        "date_closed": "2012-08-31T00:00:00"
+      },
+      {
+        "y_idx": 47,
+        "ifp_id": "1052-0",
+        "short_title": "Kyi join Parliament of Myanmar",
+        "date_start": "2011-12-19T00:00:00",
+        "date_closed": "2012-05-02T00:00:00"
+      },
+      {
+        "y_idx": 48,
+        "ifp_id": "1054-0",
+        "short_title": "S. Korea invasion by foreign force",
+        "date_start": "2011-12-19T00:00:00",
+        "date_closed": "2012-05-31T00:00:00"
+      },
+      {
+        "y_idx": 49,
+        "ifp_id": "1050-0",
+        "short_title": "Palestinian hold general election",
+        "date_start": "2011-12-19T00:00:00",
+        "date_closed": "2012-06-01T00:00:00"
+      },
+      {
+        "y_idx": 50,
+        "ifp_id": "1051-0",
+        "short_title": "Monti vacate PM of Italy",
+        "date_start": "2011-12-19T00:00:00",
+        "date_closed": "2012-12-21T00:00:00"
+      },
+      {
+        "y_idx": 51,
+        "ifp_id": "1053-0",
+        "short_title": "UK intent to withdraw from EU",
+        "date_start": "2011-12-19T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 52,
+        "ifp_id": "1060-0",
+        "short_title": "Wulff vacate president of Germany",
+        "date_start": "2012-01-09T00:00:00",
+        "date_closed": "2012-02-16T00:00:00"
+      },
+      {
+        "y_idx": 53,
+        "ifp_id": "1059-0",
+        "short_title": "Jong-un attend G8 meeting",
+        "date_start": "2012-01-09T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 54,
+        "ifp_id": "1055-0",
+        "short_title": "N. Korea detonate nuclear weapon",
+        "date_start": "2012-01-09T00:00:00",
+        "date_closed": "2012-04-01T00:00:00"
+      },
+      {
+        "y_idx": 55,
+        "ifp_id": "1058-0",
+        "short_title": "Egypt withdraw from 1979 treaty",
+        "date_start": "2012-01-09T00:00:00",
+        "date_closed": "2012-04-01T00:00:00"
+      },
+      {
+        "y_idx": 56,
+        "ifp_id": "1062-0",
+        "short_title": "Crude oil exceed $150",
+        "date_start": "2012-01-09T00:00:00",
+        "date_closed": "2012-04-02T00:00:00"
+      },
+      {
+        "y_idx": 57,
+        "ifp_id": "1056-0",
+        "short_title": "Euro-dollar exchange less than 1.2",
+        "date_start": "2012-01-09T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 58,
+        "ifp_id": "1061-0",
+        "short_title": "Syria Arab League Membership",
+        "date_start": "2012-01-09T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 59,
+        "ifp_id": "1057-0",
+        "short_title": "Russia deploy Iskander missles",
+        "date_start": "2012-01-09T00:00:00",
+        "date_closed": "2013-01-31T00:00:00"
+      },
+      {
+        "y_idx": 60,
+        "ifp_id": "1066-0",
+        "short_title": "Yemen hold presidential election",
+        "date_start": "2012-01-23T00:00:00",
+        "date_closed": "2012-02-20T00:00:00"
+      },
+      {
+        "y_idx": 61,
+        "ifp_id": "1070-0",
+        "short_title": "Duwaik released from Palestinian prison",
+        "date_start": "2012-01-23T00:00:00",
+        "date_closed": "2012-02-29T00:00:00"
+      },
+      {
+        "y_idx": 62,
+        "ifp_id": "1064-0",
+        "short_title": "Gilliani vacate PM of Pakistan",
+        "date_start": "2012-01-23T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 63,
+        "ifp_id": "1067-0",
+        "short_title": "Basescu vacate President of Romania",
+        "date_start": "2012-01-23T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 64,
+        "ifp_id": "1068-0",
+        "short_title": "UN-SC Syria resolution 2",
+        "date_start": "2012-01-23T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 65,
+        "ifp_id": "1069-0",
+        "short_title": "S. Korea reducing Iran oil import",
+        "date_start": "2012-01-23T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 66,
+        "ifp_id": "1063-0",
+        "short_title": "Taliban negotiations with US or Afgan",
+        "date_start": "2012-01-23T00:00:00",
+        "date_closed": "2012-04-01T00:00:00"
+      },
+      {
+        "y_idx": 67,
+        "ifp_id": "1065-0",
+        "short_title": "confrontation in S. or E. China Sea 2",
+        "date_start": "2012-01-23T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 68,
+        "ifp_id": "1074-0",
+        "short_title": "Libyan govt control of Bani Walid",
+        "date_start": "2012-01-30T00:00:00",
+        "date_closed": "2012-02-05T00:00:00"
+      },
+      {
+        "y_idx": 69,
+        "ifp_id": "1077-0",
+        "short_title": "Egypt lift travel ban on Americans",
+        "date_start": "2012-01-30T00:00:00",
+        "date_closed": "2012-02-15T00:00:00"
+      },
+      {
+        "y_idx": 70,
+        "ifp_id": "1072-0",
+        "short_title": "Serbia EU candidacy 2",
+        "date_start": "2012-01-30T00:00:00",
+        "date_closed": "2012-03-01T00:00:00"
+      },
+      {
+        "y_idx": 71,
+        "ifp_id": "1075-0",
+        "short_title": "Putin run-off",
+        "date_start": "2012-01-30T00:00:00",
+        "date_closed": "2012-03-04T00:00:00"
+      },
+      {
+        "y_idx": 72,
+        "ifp_id": "1071-0",
+        "short_title": "Iran-US nuclear talks",
+        "date_start": "2012-01-30T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 73,
+        "ifp_id": "1073-0",
+        "short_title": "IMF loan to Hungary",
+        "date_start": "2012-01-30T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 74,
+        "ifp_id": "1076-0",
+        "short_title": "Iraq drop charge on VP al-Hashemi",
+        "date_start": "2012-01-30T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 75,
+        "ifp_id": "1079-0",
+        "short_title": "Venezuelan presidential primary",
+        "date_start": "2012-02-07T00:00:00",
+        "date_closed": "2012-02-12T00:00:00"
+      },
+      {
+        "y_idx": 76,
+        "ifp_id": "1082-0",
+        "short_title": "Ruto vacate President of Kenya",
+        "date_start": "2012-02-07T00:00:00",
+        "date_closed": "2012-04-09T00:00:00"
+      },
+      {
+        "y_idx": 77,
+        "ifp_id": "1083-0",
+        "short_title": "LaPen vacate President of France",
+        "date_start": "2012-02-07T00:00:00",
+        "date_closed": "2012-04-09T00:00:00"
+      },
+      {
+        "y_idx": 78,
+        "ifp_id": "1078-0",
+        "short_title": "Japanese whaling ship in Australia",
+        "date_start": "2012-02-07T00:00:00",
+        "date_closed": "2012-04-10T00:00:00"
+      },
+      {
+        "y_idx": 79,
+        "ifp_id": "1081-0",
+        "short_title": "Nigeria-Haram talks",
+        "date_start": "2012-02-07T00:00:00",
+        "date_closed": "2012-12-30T00:00:00"
+      },
+      {
+        "y_idx": 80,
+        "ifp_id": "1080-0",
+        "short_title": "Macedonia NATO membership",
+        "date_start": "2012-02-07T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 81,
+        "ifp_id": "1088-0",
+        "short_title": "Japan hold parliament elections",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 82,
+        "ifp_id": "1085-0",
+        "short_title": "UN-SC reduction from Haiti",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-04-01T00:00:00"
+      },
+      {
+        "y_idx": 83,
+        "ifp_id": "1091-0",
+        "short_title": "S&P downgrade Japan",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-04-01T00:00:00"
+      },
+      {
+        "y_idx": 84,
+        "ifp_id": "1092-0",
+        "short_title": "Myanmar release 100 political prisoners",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-04-01T00:00:00"
+      },
+      {
+        "y_idx": 85,
+        "ifp_id": "1096-0",
+        "short_title": "Syrian civil war outbreak",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-04-01T00:00:00"
+      },
+      {
+        "y_idx": 86,
+        "ifp_id": "1086-0",
+        "short_title": "Manik vacate President of Maldives",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-04-09T00:00:00"
+      },
+      {
+        "y_idx": 87,
+        "ifp_id": "1090-0",
+        "short_title": "Turkey recall ambassador to France",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-04-12T00:00:00"
+      },
+      {
+        "y_idx": 88,
+        "ifp_id": "1087-0",
+        "short_title": "Moussa win Egypt presidental election",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-05-29T00:00:00"
+      },
+      {
+        "y_idx": 89,
+        "ifp_id": "1084-0",
+        "short_title": "Venezuelan presidential election",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-10-07T00:00:00"
+      },
+      {
+        "y_idx": 90,
+        "ifp_id": "1089-0",
+        "short_title": "Iran detonate nuclear device",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 91,
+        "ifp_id": "1093-0",
+        "short_title": "Taliban rep in Afgan govt",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 92,
+        "ifp_id": "1094-0",
+        "short_title": "Zimbabwe hold presidential elections",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 93,
+        "ifp_id": "1095-0",
+        "short_title": "H5N1 outbreak in China",
+        "date_start": "2012-02-21T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 94,
+        "ifp_id": "1097-0",
+        "short_title": "Tunisia extend state of emergency",
+        "date_start": "2012-03-05T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 95,
+        "ifp_id": "1099-0",
+        "short_title": "Gaddafi extradition to Libya",
+        "date_start": "2012-03-05T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 96,
+        "ifp_id": "1101-0",
+        "short_title": "Lamothe ratified as Haiti PM",
+        "date_start": "2012-03-05T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 97,
+        "ifp_id": "1103-0",
+        "short_title": "Sudan - S. Sudan oil transit fees",
+        "date_start": "2012-03-05T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 98,
+        "ifp_id": "1104-0",
+        "short_title": "Yemen control from AQAP",
+        "date_start": "2012-03-05T00:00:00",
+        "date_closed": "2012-03-31T00:00:00"
+      },
+      {
+        "y_idx": 99,
+        "ifp_id": "1102-0",
+        "short_title": "Ireland ratify Euro Fiscal Compact",
+        "date_start": "2012-03-05T00:00:00",
+        "date_closed": "2012-06-01T00:00:00"
+      },
+      {
+        "y_idx": 100,
+        "ifp_id": "1098-0",
+        "short_title": "Syria invasion by foreign force",
+        "date_start": "2012-03-05T00:00:00",
+        "date_closed": "2012-10-03T00:00:00"
+      },
+      {
+        "y_idx": 101,
+        "ifp_id": "1100-0",
+        "short_title": "Columbia-FARC talks",
+        "date_start": "2012-03-05T00:00:00",
+        "date_closed": "2012-10-17T00:00:00"
+      },
+      {
+        "y_idx": 102,
+        "ifp_id": "1107-6",
+        "short_title": "Egyption Referendum of constitution",
+        "date_start": "2012-06-18T00:00:00",
+        "date_closed": "2012-12-25T00:00:00"
+      },
+      {
+        "y_idx": 103,
+        "ifp_id": "1110-6",
+        "short_title": "North Korea nuclear detonation",
+        "date_start": "2012-06-18T00:00:00",
+        "date_closed": "2013-02-11T00:00:00"
+      },
+      {
+        "y_idx": 104,
+        "ifp_id": "1105-0",
+        "short_title": "S&P downgrade of UK credit",
+        "date_start": "2012-06-18T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 105,
+        "ifp_id": "1106-0",
+        "short_title": "Kim Jong-un vacate Supreme Leader",
+        "date_start": "2012-06-18T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 106,
+        "ifp_id": "1108-6",
+        "short_title": "Japan join Trans-Pacific Partnership",
+        "date_start": "2012-06-18T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 107,
+        "ifp_id": "1109-0",
+        "short_title": "Any country withdraw from Eurozone",
+        "date_start": "2012-06-18T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 108,
+        "ifp_id": "1111-6",
+        "short_title": "Iran-UN nuclear monitoring deal",
+        "date_start": "2012-06-18T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 109,
+        "ifp_id": "1112-6",
+        "short_title": "al-Assad vacate President of Syria",
+        "date_start": "2012-06-18T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 110,
+        "ifp_id": "1116-0",
+        "short_title": "Libya commence elections",
+        "date_start": "2012-06-25T00:00:00",
+        "date_closed": "2012-07-06T00:00:00"
+      },
+      {
+        "y_idx": 111,
+        "ifp_id": "1117-0",
+        "short_title": "al-Tarawneh vacate PM of Jordan",
+        "date_start": "2012-06-25T00:00:00",
+        "date_closed": "2012-10-09T00:00:00"
+      },
+      {
+        "y_idx": 112,
+        "ifp_id": "1118-0",
+        "short_title": "Sierra Leon next President",
+        "date_start": "2012-06-25T00:00:00",
+        "date_closed": "2012-11-23T00:00:00"
+      },
+      {
+        "y_idx": 113,
+        "ifp_id": "1115-0",
+        "short_title": "UN-SC military intervention in Mali",
+        "date_start": "2012-06-25T00:00:00",
+        "date_closed": "2012-12-20T00:00:00"
+      },
+      {
+        "y_idx": 114,
+        "ifp_id": "1114-0",
+        "short_title": "Ashraf vacate PM of Pakistan",
+        "date_start": "2012-06-25T00:00:00",
+        "date_closed": "2013-03-24T00:00:00"
+      },
+      {
+        "y_idx": 115,
+        "ifp_id": "1113-6",
+        "short_title": "Orban vacate PM of Hungary",
+        "date_start": "2012-06-25T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 116,
+        "ifp_id": "1123-0",
+        "short_title": "Romania remove President Basescu",
+        "date_start": "2012-07-16T00:00:00",
+        "date_closed": "2012-07-31T00:00:00"
+      },
+      {
+        "y_idx": 117,
+        "ifp_id": "1119-6",
+        "short_title": "Libya new PM",
+        "date_start": "2012-07-16T00:00:00",
+        "date_closed": "2012-09-12T00:00:00"
+      },
+      {
+        "y_idx": 118,
+        "ifp_id": "1121-0",
+        "short_title": "Islamic Jihad violate cease-fire",
+        "date_start": "2012-07-16T00:00:00",
+        "date_closed": "2012-10-01T00:00:00"
+      },
+      {
+        "y_idx": 119,
+        "ifp_id": "1122-6",
+        "short_title": "al-Maliki vacate PM of Iraq",
+        "date_start": "2012-07-16T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 120,
+        "ifp_id": "1124-0",
+        "short_title": "Israel recognize Armenian genocide",
+        "date_start": "2012-07-16T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 121,
+        "ifp_id": "1125-6",
+        "short_title": "S. Korea & Japan intelligence pact",
+        "date_start": "2012-07-16T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 122,
+        "ifp_id": "1126-6",
+        "short_title": "Turkey ratify new constitution",
+        "date_start": "2012-07-16T00:00:00",
+        "date_closed": "2013-05-01T00:00:00"
+      },
+      {
+        "y_idx": 123,
+        "ifp_id": "1131-0",
+        "short_title": "Ponta vacate PM of Romania",
+        "date_start": "2012-07-30T00:00:00",
+        "date_closed": "2012-10-31T00:00:00"
+      },
+      {
+        "y_idx": 124,
+        "ifp_id": "1127-0",
+        "short_title": "Moody downgrade French banks",
+        "date_start": "2012-07-30T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 125,
+        "ifp_id": "1129-2",
+        "short_title": "Syria uses weapons",
+        "date_start": "2012-07-30T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 126,
+        "ifp_id": "1132-2",
+        "short_title": "al-Shabaab talks w/ Somali Govt",
+        "date_start": "2012-07-30T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 127,
+        "ifp_id": "1130-0",
+        "short_title": "Moody downgrade Germany",
+        "date_start": "2012-07-30T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 128,
+        "ifp_id": "1128-0",
+        "short_title": "Iran blockade Strait of Hormuz",
+        "date_start": "2012-07-30T00:00:00",
+        "date_closed": "2013-12-31T00:00:00"
+      },
+      {
+        "y_idx": 129,
+        "ifp_id": "1136-0",
+        "short_title": "Kuwait parlimentary elections",
+        "date_start": "2012-08-13T00:00:00",
+        "date_closed": "2012-10-01T00:00:00"
+      },
+      {
+        "y_idx": 130,
+        "ifp_id": "1135-0",
+        "short_title": "Syrian refugees exceed 250000",
+        "date_start": "2012-08-13T00:00:00",
+        "date_closed": "2012-10-08T00:00:00"
+      },
+      {
+        "y_idx": 131,
+        "ifp_id": "1133-0",
+        "short_title": "Israel early elections",
+        "date_start": "2012-08-13T00:00:00",
+        "date_closed": "2012-10-15T00:00:00"
+      },
+      {
+        "y_idx": 132,
+        "ifp_id": "1134-6",
+        "short_title": "Free Syrian Army control Aleppo",
+        "date_start": "2012-08-13T00:00:00",
+        "date_closed": "2012-10-31T00:00:00"
+      },
+      {
+        "y_idx": 133,
+        "ifp_id": "1137-0",
+        "short_title": "UK Lib Dems and Conservatives coalition",
+        "date_start": "2012-08-13T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 134,
+        "ifp_id": "1138-1",
+        "short_title": "North/South Korea talks",
+        "date_start": "2012-08-13T00:00:00",
+        "date_closed": "2013-05-08T00:00:00"
+      },
+      {
+        "y_idx": 135,
+        "ifp_id": "1139-0",
+        "short_title": "Govt control of Kismayo Somalia",
+        "date_start": "2012-08-27T00:00:00",
+        "date_closed": "2012-10-04T00:00:00"
+      },
+      {
+        "y_idx": 136,
+        "ifp_id": "1141-0",
+        "short_title": "Ghana Presidential elections",
+        "date_start": "2012-08-27T00:00:00",
+        "date_closed": "2012-12-09T00:00:00"
+      },
+      {
+        "y_idx": 137,
+        "ifp_id": "1140-0",
+        "short_title": "Iran convict Rezaeinejad",
+        "date_start": "2012-08-27T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 138,
+        "ifp_id": "1143-1",
+        "short_title": "IMF Egypt loan ",
+        "date_start": "2012-08-27T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 139,
+        "ifp_id": "1142-0",
+        "short_title": "Iran invasion by foreign force",
+        "date_start": "2012-08-27T00:00:00",
+        "date_closed": "2013-01-20T00:00:00"
+      },
+      {
+        "y_idx": 140,
+        "ifp_id": "1145-1",
+        "short_title": "Yuan change &gt;5% ",
+        "date_start": "2012-09-10T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 141,
+        "ifp_id": "1144-1",
+        "short_title": "Rajoy vacate Spain PM ",
+        "date_start": "2012-09-10T00:00:00",
+        "date_closed": "2013-01-31T00:00:00"
+      },
+      {
+        "y_idx": 142,
+        "ifp_id": "1148-0",
+        "short_title": "EUC: Bulgaria & Romania in Schengen",
+        "date_start": "2012-09-10T00:00:00",
+        "date_closed": "2013-01-31T00:00:00"
+      },
+      {
+        "y_idx": 143,
+        "ifp_id": "1147-0",
+        "short_title": "Egypt nuclear power plant",
+        "date_start": "2012-09-10T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 144,
+        "ifp_id": "1146-0",
+        "short_title": "WTO metals complaint btw EU & China",
+        "date_start": "2012-09-10T00:00:00",
+        "date_closed": "2013-12-30T00:00:00"
+      },
+      {
+        "y_idx": 145,
+        "ifp_id": "1155-6",
+        "short_title": "FAO Food Price Index change",
+        "date_start": "2012-09-25T00:00:00",
+        "date_closed": "2012-10-03T00:00:00"
+      },
+      {
+        "y_idx": 146,
+        "ifp_id": "1152-0",
+        "short_title": "Overturn al-Hashimi death sentence",
+        "date_start": "2012-09-25T00:00:00",
+        "date_closed": "2012-10-31T00:00:00"
+      },
+      {
+        "y_idx": 147,
+        "ifp_id": "1151-2",
+        "short_title": "Japan/NKorea agreement",
+        "date_start": "2012-09-25T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 148,
+        "ifp_id": "1154-2",
+        "short_title": "NKorea nuke inspection",
+        "date_start": "2012-09-25T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 149,
+        "ifp_id": "1157-0",
+        "short_title": "Lithuanian coalition parties",
+        "date_start": "2012-10-09T00:00:00",
+        "date_closed": "2012-11-19T00:00:00"
+      },
+      {
+        "y_idx": 150,
+        "ifp_id": "1160-0",
+        "short_title": "Turkish force enter Syria",
+        "date_start": "2012-10-09T00:00:00",
+        "date_closed": "2012-11-30T00:00:00"
+      },
+      {
+        "y_idx": 151,
+        "ifp_id": "1158-2",
+        "short_title": "Mali/Ansar Dine talks ",
+        "date_start": "2012-10-09T00:00:00",
+        "date_closed": "2012-12-04T00:00:00"
+      },
+      {
+        "y_idx": 152,
+        "ifp_id": "1156-1",
+        "short_title": "Japan PM Abe ",
+        "date_start": "2012-10-09T00:00:00",
+        "date_closed": "2012-12-25T00:00:00"
+      },
+      {
+        "y_idx": 153,
+        "ifp_id": "1159-0",
+        "short_title": "Arafat polonium",
+        "date_start": "2012-10-09T00:00:00",
+        "date_closed": "2013-11-05T00:00:00"
+      },
+      {
+        "y_idx": 154,
+        "ifp_id": "1163-0",
+        "short_title": "Yandong as Chinese Politburo",
+        "date_start": "2012-10-23T00:00:00",
+        "date_closed": "2012-11-14T00:00:00"
+      },
+      {
+        "y_idx": 155,
+        "ifp_id": "1164-6",
+        "short_title": "Number of Syrian refugees",
+        "date_start": "2012-10-23T00:00:00",
+        "date_closed": "2012-12-01T00:00:00"
+      },
+      {
+        "y_idx": 156,
+        "ifp_id": "1161-0",
+        "short_title": "IMF Argentina Sanctions",
+        "date_start": "2012-10-23T00:00:00",
+        "date_closed": "2013-01-31T00:00:00"
+      },
+      {
+        "y_idx": 157,
+        "ifp_id": "1165-0",
+        "short_title": "Iran/US nuclear talks",
+        "date_start": "2012-10-23T00:00:00",
+        "date_closed": "2013-02-25T00:00:00"
+      },
+      {
+        "y_idx": 158,
+        "ifp_id": "1162-4",
+        "short_title": "Canada Consulate in Iran",
+        "date_start": "2012-10-23T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 159,
+        "ifp_id": "1167-2",
+        "short_title": "EU Banking Union",
+        "date_start": "2012-11-05T00:00:00",
+        "date_closed": "2012-12-12T00:00:00"
+      },
+      {
+        "y_idx": 160,
+        "ifp_id": "1169-0",
+        "short_title": "S.Korea Pres. Elections",
+        "date_start": "2012-11-05T00:00:00",
+        "date_closed": "2012-12-19T00:00:00"
+      },
+      {
+        "y_idx": 161,
+        "ifp_id": "1166-2",
+        "short_title": "Israel airstrike in Sudan ",
+        "date_start": "2012-11-05T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 162,
+        "ifp_id": "1170-0",
+        "short_title": "S&P Downgrade India",
+        "date_start": "2012-11-05T00:00:00",
+        "date_closed": "2013-01-31T00:00:00"
+      },
+      {
+        "y_idx": 163,
+        "ifp_id": "1168-0",
+        "short_title": "Italy quake expert conviction",
+        "date_start": "2012-11-05T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 164,
+        "ifp_id": "1175-2",
+        "short_title": "Israel invade Gaza ",
+        "date_start": "2012-11-19T00:00:00",
+        "date_closed": "2012-11-30T00:00:00"
+      },
+      {
+        "y_idx": 165,
+        "ifp_id": "1173-0",
+        "short_title": "Chinese consumer confidence score",
+        "date_start": "2012-11-19T00:00:00",
+        "date_closed": "2012-12-28T00:00:00"
+      },
+      {
+        "y_idx": 166,
+        "ifp_id": "1171-2",
+        "short_title": "Ahmed Shafik trial ",
+        "date_start": "2012-11-19T00:00:00",
+        "date_closed": "2012-12-31T00:00:00"
+      },
+      {
+        "y_idx": 167,
+        "ifp_id": "1174-0",
+        "short_title": "Will Turkey release Abdullah Ocalan?",
+        "date_start": "2012-11-19T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 168,
+        "ifp_id": "1172-2",
+        "short_title": "Taliban/Afghan talks ",
+        "date_start": "2012-11-19T00:00:00",
+        "date_closed": "2013-08-31T00:00:00"
+      },
+      {
+        "y_idx": 169,
+        "ifp_id": "1177-0",
+        "short_title": "Morsi remains as Egypt President",
+        "date_start": "2012-12-03T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 170,
+        "ifp_id": "1178-0",
+        "short_title": "Netanyahu resigns",
+        "date_start": "2012-12-03T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 171,
+        "ifp_id": "1179-0",
+        "short_title": "Syria: Control of Aleppo",
+        "date_start": "2012-12-03T00:00:00",
+        "date_closed": "2013-04-30T00:00:00"
+      },
+      {
+        "y_idx": 172,
+        "ifp_id": "1176-0",
+        "short_title": "Merkel wins German election",
+        "date_start": "2012-12-03T00:00:00",
+        "date_closed": "2013-12-16T00:00:00"
+      },
+      {
+        "y_idx": 173,
+        "ifp_id": "1180-0",
+        "short_title": "Foreign forces invade Iran",
+        "date_start": "2012-12-17T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 174,
+        "ifp_id": "1181-0",
+        "short_title": "Iran signs IAEA Structured Approach",
+        "date_start": "2012-12-17T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 175,
+        "ifp_id": "1182-0",
+        "short_title": "Ahmadinejad resigns",
+        "date_start": "2012-12-17T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 176,
+        "ifp_id": "1183-0",
+        "short_title": "UNSC resolution on Iran",
+        "date_start": "2012-12-17T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 177,
+        "ifp_id": "1184-0",
+        "short_title": "Iran enriches Uranium above 27%",
+        "date_start": "2012-12-17T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 178,
+        "ifp_id": "1186-0",
+        "short_title": "Cyprus president",
+        "date_start": "2013-01-07T00:00:00",
+        "date_closed": "2013-02-28T00:00:00"
+      },
+      {
+        "y_idx": 179,
+        "ifp_id": "1185-2",
+        "short_title": "Iraq/Kurdish conflict ",
+        "date_start": "2013-01-07T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 180,
+        "ifp_id": "1187-2",
+        "short_title": "M23 occupy Goma ",
+        "date_start": "2013-01-07T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 181,
+        "ifp_id": "1188-2",
+        "short_title": "NKorea rocket launch ",
+        "date_start": "2013-01-07T00:00:00",
+        "date_closed": "2013-08-31T00:00:00"
+      },
+      {
+        "y_idx": 182,
+        "ifp_id": "1189-2",
+        "short_title": "Russian Syria naval base ",
+        "date_start": "2013-01-07T00:00:00",
+        "date_closed": "2014-01-01T00:00:00"
+      },
+      {
+        "y_idx": 183,
+        "ifp_id": "1191-2",
+        "short_title": "Venezuela exchange rate",
+        "date_start": "2013-01-22T00:00:00",
+        "date_closed": "2013-02-12T00:00:00"
+      },
+      {
+        "y_idx": 184,
+        "ifp_id": "1193-6",
+        "short_title": "Mali Refugees",
+        "date_start": "2013-01-22T00:00:00",
+        "date_closed": "2013-03-01T00:00:00"
+      },
+      {
+        "y_idx": 185,
+        "ifp_id": "1190-2",
+        "short_title": "Italy Bond Rate ",
+        "date_start": "2013-01-22T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 186,
+        "ifp_id": "1192-1",
+        "short_title": "Kenyata ICC Verdict ",
+        "date_start": "2013-01-22T00:00:00",
+        "date_closed": "2013-04-11T00:00:00"
+      },
+      {
+        "y_idx": 187,
+        "ifp_id": "1198-2",
+        "short_title": "Egypt Lifts SOE ",
+        "date_start": "2013-02-04T00:00:00",
+        "date_closed": "2013-02-24T00:00:00"
+      },
+      {
+        "y_idx": 188,
+        "ifp_id": "1196-1",
+        "short_title": "Attack North Korea ",
+        "date_start": "2013-02-04T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 189,
+        "ifp_id": "1194-2",
+        "short_title": "Syria Invades Israel ",
+        "date_start": "2013-02-04T00:00:00",
+        "date_closed": "2013-04-01T00:00:00"
+      },
+      {
+        "y_idx": 190,
+        "ifp_id": "1195-2",
+        "short_title": "Israel Invades Syria ",
+        "date_start": "2013-02-04T00:00:00",
+        "date_closed": "2013-04-01T00:00:00"
+      },
+      {
+        "y_idx": 191,
+        "ifp_id": "1197-2",
+        "short_title": "Syria No-Fly Zone ",
+        "date_start": "2013-02-04T00:00:00",
+        "date_closed": "2013-12-31T00:00:00"
+      },
+      {
+        "y_idx": 192,
+        "ifp_id": "1199-0",
+        "short_title": "Jebali as Prime Minister of Tunisia",
+        "date_start": "2013-02-12T00:00:00",
+        "date_closed": "2013-02-19T00:00:00"
+      },
+      {
+        "y_idx": 193,
+        "ifp_id": "1202-2",
+        "short_title": "Mali Talks ",
+        "date_start": "2013-02-12T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 194,
+        "ifp_id": "1201-6",
+        "short_title": "Rajoy as Prime Minister of Spain",
+        "date_start": "2013-02-12T00:00:00",
+        "date_closed": "2013-04-07T00:00:00"
+      },
+      {
+        "y_idx": 195,
+        "ifp_id": "1200-1",
+        "short_title": "Mali Election ",
+        "date_start": "2013-02-12T00:00:00",
+        "date_closed": "2013-05-01T00:00:00"
+      },
+      {
+        "y_idx": 196,
+        "ifp_id": "1205-0",
+        "short_title": "Who will be the next Pope?",
+        "date_start": "2013-02-26T00:00:00",
+        "date_closed": "2013-03-13T00:00:00"
+      },
+      {
+        "y_idx": 197,
+        "ifp_id": "1203-0",
+        "short_title": "Zimbabwe constitutional referendum",
+        "date_start": "2013-02-26T00:00:00",
+        "date_closed": "2013-03-19T00:00:00"
+      },
+      {
+        "y_idx": 198,
+        "ifp_id": "1204-0",
+        "short_title": "Egypt parliamentary elections",
+        "date_start": "2013-02-26T00:00:00",
+        "date_closed": "2013-04-22T00:00:00"
+      },
+      {
+        "y_idx": 199,
+        "ifp_id": "1206-6",
+        "short_title": "When will Italy form new government",
+        "date_start": "2013-03-11T00:00:00",
+        "date_closed": "2013-03-31T00:00:00"
+      },
+      {
+        "y_idx": 200,
+        "ifp_id": "1207-0",
+        "short_title": "France troop withdrawal from Mali",
+        "date_start": "2013-03-11T00:00:00",
+        "date_closed": "2013-04-09T00:00:00"
+      },
+      {
+        "y_idx": 201,
+        "ifp_id": "1209-0",
+        "short_title": "Tunisia credit rating",
+        "date_start": "2013-03-11T00:00:00",
+        "date_closed": "2013-04-09T00:00:00"
+      },
+      {
+        "y_idx": 202,
+        "ifp_id": "1211-1",
+        "short_title": "Japan parliament majority ",
+        "date_start": "2013-03-11T00:00:00",
+        "date_closed": "2013-07-20T00:00:00"
+      },
+      {
+        "y_idx": 203,
+        "ifp_id": "1210-2",
+        "short_title": "N Korea DMZ violation ",
+        "date_start": "2013-03-11T00:00:00",
+        "date_closed": "2013-09-30T00:00:00"
+      },
+      {
+        "y_idx": 204,
+        "ifp_id": "1212-0",
+        "short_title": "Japan/China confrontation",
+        "date_start": "2013-03-11T00:00:00",
+        "date_closed": "2013-12-31T00:00:00"
+      },
+      {
+        "y_idx": 205,
+        "ifp_id": "1208-4",
+        "short_title": "Syria talks with opposition ",
+        "date_start": "2013-03-20T00:00:00",
+        "date_closed": "2013-08-31T00:00:00"
+      },
+      {
+        "y_idx": 206,
+        "ifp_id": "1213-0",
+        "short_title": "Euro Less than $1.27",
+        "date_start": "2013-03-25T00:00:00",
+        "date_closed": "2013-04-09T00:00:00"
+      },
+      {
+        "y_idx": 207,
+        "ifp_id": "1214-0",
+        "short_title": "S&P Cyprus rating",
+        "date_start": "2013-03-25T00:00:00",
+        "date_closed": "2013-04-09T00:00:00"
+      },
+      {
+        "y_idx": 208,
+        "ifp_id": "5004-0",
+        "short_title": "Tour de France",
+        "date_start": "2013-07-09T00:00:00",
+        "date_closed": "2013-07-21T00:00:00"
+      },
+      {
+        "y_idx": 209,
+        "ifp_id": "5005-6",
+        "short_title": "Wolverine box office",
+        "date_start": "2013-07-09T00:00:00",
+        "date_closed": "2013-07-29T00:00:00"
+      },
+      {
+        "y_idx": 210,
+        "ifp_id": "5003-0",
+        "short_title": "Chinese Interdiction ",
+        "date_start": "2013-07-09T00:00:00",
+        "date_closed": "2013-07-30T00:00:00"
+      },
+      {
+        "y_idx": 211,
+        "ifp_id": "5001-0",
+        "short_title": "Snowden Asylum",
+        "date_start": "2013-07-09T00:00:00",
+        "date_closed": "2013-07-31T00:00:00"
+      },
+      {
+        "y_idx": 212,
+        "ifp_id": "5007-0",
+        "short_title": "US Employment",
+        "date_start": "2013-07-09T00:00:00",
+        "date_closed": "2013-07-31T00:00:00"
+      },
+      {
+        "y_idx": 213,
+        "ifp_id": "5002-0",
+        "short_title": "Mali Elections",
+        "date_start": "2013-07-09T00:00:00",
+        "date_closed": "2013-08-12T00:00:00"
+      },
+      {
+        "y_idx": 214,
+        "ifp_id": "1215-0",
+        "short_title": "Turkey ratify new constitution",
+        "date_start": "2013-07-15T00:00:00",
+        "date_closed": "2014-01-31T00:00:00"
+      },
+      {
+        "y_idx": 215,
+        "ifp_id": "1227-6",
+        "short_title": "Korea - Kaesong Industrial Complex",
+        "date_start": "2013-07-31T00:00:00",
+        "date_closed": "2013-09-16T00:00:00"
+      },
+      {
+        "y_idx": 216,
+        "ifp_id": "1240-0",
+        "short_title": "Libya Constitutional Commission",
+        "date_start": "2013-07-31T00:00:00",
+        "date_closed": "2013-09-30T00:00:00"
+      },
+      {
+        "y_idx": 217,
+        "ifp_id": "1222-6",
+        "short_title": "China GDP Growth",
+        "date_start": "2013-07-31T00:00:00",
+        "date_closed": "2013-10-17T00:00:00"
+      },
+      {
+        "y_idx": 218,
+        "ifp_id": "1220-0",
+        "short_title": "China Interdiction",
+        "date_start": "2013-07-31T00:00:00",
+        "date_closed": "2013-12-13T00:00:00"
+      },
+      {
+        "y_idx": 219,
+        "ifp_id": "1232-2",
+        "short_title": "Bolivia/USAID",
+        "date_start": "2013-07-31T00:00:00",
+        "date_closed": "2013-12-31T00:00:00"
+      },
+      {
+        "y_idx": 220,
+        "ifp_id": "1234-2",
+        "short_title": "Afghanistan SOFA",
+        "date_start": "2013-07-31T00:00:00",
+        "date_closed": "2013-12-31T00:00:00"
+      },
+      {
+        "y_idx": 221,
+        "ifp_id": "1245-6",
+        "short_title": "IMF voting rules",
+        "date_start": "2013-07-31T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 222,
+        "ifp_id": "1226-2",
+        "short_title": "Korea: Six-party talks",
+        "date_start": "2013-08-07T00:00:00",
+        "date_closed": "2013-12-31T00:00:00"
+      },
+      {
+        "y_idx": 223,
+        "ifp_id": "1241-6",
+        "short_title": "UN Conference on Syria",
+        "date_start": "2013-08-07T00:00:00",
+        "date_closed": "2013-12-31T00:00:00"
+      },
+      {
+        "y_idx": 224,
+        "ifp_id": "1243-6",
+        "short_title": "Freedom House Democracies",
+        "date_start": "2013-08-07T00:00:00",
+        "date_closed": "2014-01-22T00:00:00"
+      },
+      {
+        "y_idx": 225,
+        "ifp_id": "1250-2",
+        "short_title": "China UAV Sale",
+        "date_start": "2013-08-07T00:00:00",
+        "date_closed": "2014-04-24T00:00:00"
+      },
+      {
+        "y_idx": 226,
+        "ifp_id": "1233-6",
+        "short_title": "Marijuana Decriminalization",
+        "date_start": "2013-08-07T00:00:00",
+        "date_closed": "2014-05-01T00:00:00"
+      },
+      {
+        "y_idx": 227,
+        "ifp_id": "1251-0",
+        "short_title": "Guinea Legislative Elections",
+        "date_start": "2013-08-14T00:00:00",
+        "date_closed": "2013-09-27T00:00:00"
+      },
+      {
+        "y_idx": 228,
+        "ifp_id": "1253-2",
+        "short_title": "Egypt Constitutional Ban",
+        "date_start": "2013-08-14T00:00:00",
+        "date_closed": "2013-11-30T00:00:00"
+      },
+      {
+        "y_idx": 229,
+        "ifp_id": "1254-2",
+        "short_title": "Iran Nuclear Inspections",
+        "date_start": "2013-08-14T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 230,
+        "ifp_id": "1223-0",
+        "short_title": "Snowden and Olympics",
+        "date_start": "2013-08-14T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 231,
+        "ifp_id": "1231-2",
+        "short_title": "Venezuela/Maduro",
+        "date_start": "2013-08-14T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 232,
+        "ifp_id": "1252-1",
+        "short_title": "Kony Capture ",
+        "date_start": "2013-08-14T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 233,
+        "ifp_id": "1258-0",
+        "short_title": "Australian Elections",
+        "date_start": "2013-08-21T00:00:00",
+        "date_closed": "2013-09-17T00:00:00"
+      },
+      {
+        "y_idx": 234,
+        "ifp_id": "1257-0",
+        "short_title": "India/Pakistan High Commissioner",
+        "date_start": "2013-08-21T00:00:00",
+        "date_closed": "2014-01-31T00:00:00"
+      },
+      {
+        "y_idx": 235,
+        "ifp_id": "1256-6",
+        "short_title": "IMF World Economic Output",
+        "date_start": "2013-08-21T00:00:00",
+        "date_closed": "2014-04-02T00:00:00"
+      },
+      {
+        "y_idx": 236,
+        "ifp_id": "1255-2",
+        "short_title": "Iran Missile Test",
+        "date_start": "2013-08-21T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 237,
+        "ifp_id": "1261-6",
+        "short_title": "Bo Xilai trial",
+        "date_start": "2013-08-28T00:00:00",
+        "date_closed": "2013-09-21T00:00:00"
+      },
+      {
+        "y_idx": 238,
+        "ifp_id": "1262-1",
+        "short_title": "Syria attack Israel",
+        "date_start": "2013-08-28T00:00:00",
+        "date_closed": "2013-12-31T00:00:00"
+      },
+      {
+        "y_idx": 239,
+        "ifp_id": "1259-2",
+        "short_title": "Khalifa PM Bahrain",
+        "date_start": "2013-08-28T00:00:00",
+        "date_closed": "2014-01-31T00:00:00"
+      },
+      {
+        "y_idx": 240,
+        "ifp_id": "1221-6",
+        "short_title": "Chinese-US exchange rate",
+        "date_start": "2013-08-28T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 241,
+        "ifp_id": "1249-2",
+        "short_title": "China deploy UAV",
+        "date_start": "2013-08-28T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 242,
+        "ifp_id": "1244-0",
+        "short_title": "India/Brazil UNSC",
+        "date_start": "2013-08-28T00:00:00",
+        "date_closed": "2015-02-28T00:00:00"
+      },
+      {
+        "y_idx": 243,
+        "ifp_id": "1268-6",
+        "short_title": "Syria: UNSC Resolution ",
+        "date_start": "2013-09-11T00:00:00",
+        "date_closed": "2013-09-27T00:00:00"
+      },
+      {
+        "y_idx": 244,
+        "ifp_id": "1264-6",
+        "short_title": "Ireland credit rating",
+        "date_start": "2013-09-11T00:00:00",
+        "date_closed": "2013-10-31T00:00:00"
+      },
+      {
+        "y_idx": 245,
+        "ifp_id": "1267-0",
+        "short_title": "Honduras Elections",
+        "date_start": "2013-09-11T00:00:00",
+        "date_closed": "2013-11-25T00:00:00"
+      },
+      {
+        "y_idx": 246,
+        "ifp_id": "1265-6",
+        "short_title": "Yen exchange rate",
+        "date_start": "2013-09-11T00:00:00",
+        "date_closed": "2013-11-30T00:00:00"
+      },
+      {
+        "y_idx": 247,
+        "ifp_id": "1225-2",
+        "short_title": "Iran abolish president",
+        "date_start": "2013-09-11T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 248,
+        "ifp_id": "1263-1",
+        "short_title": "Pakistan Prime Minister ",
+        "date_start": "2013-09-11T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 249,
+        "ifp_id": "1269-1",
+        "short_title": "Syria OPCW Inspections",
+        "date_start": "2013-09-19T00:00:00",
+        "date_closed": "2013-10-27T00:00:00"
+      },
+      {
+        "y_idx": 250,
+        "ifp_id": "1266-2",
+        "short_title": "Gazprom Ukraine ",
+        "date_start": "2013-09-19T00:00:00",
+        "date_closed": "2014-02-28T00:00:00"
+      },
+      {
+        "y_idx": 251,
+        "ifp_id": "1271-2",
+        "short_title": "N Korea Nuclear Test",
+        "date_start": "2013-09-19T00:00:00",
+        "date_closed": "2014-02-28T00:00:00"
+      },
+      {
+        "y_idx": 252,
+        "ifp_id": "1235-6",
+        "short_title": "Islamic Emirate Afghanistan Constitution",
+        "date_start": "2013-09-19T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 253,
+        "ifp_id": "1238-0",
+        "short_title": "Saudi Head of Govt",
+        "date_start": "2013-09-19T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 254,
+        "ifp_id": "1273-0",
+        "short_title": "Georgian Election",
+        "date_start": "2013-09-25T00:00:00",
+        "date_closed": "2013-10-27T00:00:00"
+      },
+      {
+        "y_idx": 255,
+        "ifp_id": "1248-0",
+        "short_title": "Mozambique Insurgency",
+        "date_start": "2013-09-25T00:00:00",
+        "date_closed": "2013-10-31T00:00:00"
+      },
+      {
+        "y_idx": 256,
+        "ifp_id": "1218-2",
+        "short_title": "China/Second Thomas Shoal",
+        "date_start": "2013-09-25T00:00:00",
+        "date_closed": "2013-12-31T00:00:00"
+      },
+      {
+        "y_idx": 257,
+        "ifp_id": "1246-0",
+        "short_title": "Chad Insurgency",
+        "date_start": "2013-09-25T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 258,
+        "ifp_id": "1275-2",
+        "short_title": "China Corruption",
+        "date_start": "2013-09-25T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 259,
+        "ifp_id": "1276-0",
+        "short_title": "China Hukou Reform",
+        "date_start": "2013-10-09T00:00:00",
+        "date_closed": "2013-11-11T00:00:00"
+      },
+      {
+        "y_idx": 260,
+        "ifp_id": "1278-0",
+        "short_title": "M-PESA Failure",
+        "date_start": "2013-10-09T00:00:00",
+        "date_closed": "2013-12-30T00:00:00"
+      },
+      {
+        "y_idx": 261,
+        "ifp_id": "1277-2",
+        "short_title": "Russia / South Ossetia",
+        "date_start": "2013-10-09T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 262,
+        "ifp_id": "1289-2",
+        "short_title": "Pakistan/Taliban Talks",
+        "date_start": "2013-10-16T00:00:00",
+        "date_closed": "2013-11-30T00:00:00"
+      },
+      {
+        "y_idx": 263,
+        "ifp_id": "1295-2",
+        "short_title": "Japan Defense Budget",
+        "date_start": "2013-10-16T00:00:00",
+        "date_closed": "2013-12-23T00:00:00"
+      },
+      {
+        "y_idx": 264,
+        "ifp_id": "1290-2",
+        "short_title": "Brazil/US State Visit",
+        "date_start": "2013-10-16T00:00:00",
+        "date_closed": "2014-01-31T00:00:00"
+      },
+      {
+        "y_idx": 265,
+        "ifp_id": "1291-6",
+        "short_title": "Brent Crude Price",
+        "date_start": "2013-10-16T00:00:00",
+        "date_closed": "2014-01-31T00:00:00"
+      },
+      {
+        "y_idx": 266,
+        "ifp_id": "1279-0",
+        "short_title": "Colombia / FARC peace agreement",
+        "date_start": "2013-10-16T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 267,
+        "ifp_id": "1281-0",
+        "short_title": "New State in Syria Turkey Iraq",
+        "date_start": "2013-10-16T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 268,
+        "ifp_id": "1292-0",
+        "short_title": "Lamu Pipeline",
+        "date_start": "2013-10-16T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 269,
+        "ifp_id": "1297-2",
+        "short_title": "UK Iranian Embassy Reopens",
+        "date_start": "2013-10-23T00:00:00",
+        "date_closed": "2013-12-30T00:00:00"
+      },
+      {
+        "y_idx": 270,
+        "ifp_id": "1296-6",
+        "short_title": "Middle East Coronavirus ",
+        "date_start": "2013-10-23T00:00:00",
+        "date_closed": "2013-12-31T00:00:00"
+      },
+      {
+        "y_idx": 271,
+        "ifp_id": "1293-2",
+        "short_title": "India General Elections",
+        "date_start": "2013-10-23T00:00:00",
+        "date_closed": "2014-05-16T00:00:00"
+      },
+      {
+        "y_idx": 272,
+        "ifp_id": "1314-6",
+        "short_title": "Chile Elections",
+        "date_start": "2013-11-06T00:00:00",
+        "date_closed": "2013-11-17T00:00:00"
+      },
+      {
+        "y_idx": 273,
+        "ifp_id": "1304-2",
+        "short_title": "Iran Uranium Enrichment Limits",
+        "date_start": "2013-11-06T00:00:00",
+        "date_closed": "2013-11-23T00:00:00"
+      },
+      {
+        "y_idx": 274,
+        "ifp_id": "1300-6",
+        "short_title": "Arab Gas Pipeline attacks",
+        "date_start": "2013-11-06T00:00:00",
+        "date_closed": "2013-12-25T00:00:00"
+      },
+      {
+        "y_idx": 275,
+        "ifp_id": "1303-0",
+        "short_title": "Saudi UNSC Seat",
+        "date_start": "2013-11-06T00:00:00",
+        "date_closed": "2014-01-06T00:00:00"
+      },
+      {
+        "y_idx": 276,
+        "ifp_id": "1301-2",
+        "short_title": "Facebook/Twitter in Shanghai FTZ",
+        "date_start": "2013-11-06T00:00:00",
+        "date_closed": "2014-03-30T00:00:00"
+      },
+      {
+        "y_idx": 277,
+        "ifp_id": "1308-6",
+        "short_title": "LDCF Pledges",
+        "date_start": "2013-11-06T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 278,
+        "ifp_id": "1302-1",
+        "short_title": "Russia Adoption Ban",
+        "date_start": "2013-11-06T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 279,
+        "ifp_id": "1316-0",
+        "short_title": "Venezuela Municipal Elections",
+        "date_start": "2013-11-13T00:00:00",
+        "date_closed": "2013-12-08T00:00:00"
+      },
+      {
+        "y_idx": 280,
+        "ifp_id": "1315-2",
+        "short_title": "Polio Vaccination Proof Required",
+        "date_start": "2013-11-13T00:00:00",
+        "date_closed": "2013-12-11T00:00:00"
+      },
+      {
+        "y_idx": 281,
+        "ifp_id": "1318-2",
+        "short_title": "Japan PM Visits Yasukuni Shrine",
+        "date_start": "2013-11-13T00:00:00",
+        "date_closed": "2013-12-25T00:00:00"
+      },
+      {
+        "y_idx": 282,
+        "ifp_id": "1312-6",
+        "short_title": "Euro High Yield Index Spread",
+        "date_start": "2013-11-13T00:00:00",
+        "date_closed": "2014-02-28T00:00:00"
+      },
+      {
+        "y_idx": 283,
+        "ifp_id": "1294-0",
+        "short_title": "Syrian Cease Fire",
+        "date_start": "2013-11-13T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 284,
+        "ifp_id": "1311-6",
+        "short_title": "IMF 2014 World GDP Growth",
+        "date_start": "2013-11-13T00:00:00",
+        "date_closed": "2014-04-02T00:00:00"
+      },
+      {
+        "y_idx": 285,
+        "ifp_id": "1319-0",
+        "short_title": "Russia WTO Anti-Dumping Dispute",
+        "date_start": "2013-11-20T00:00:00",
+        "date_closed": "2014-01-05T00:00:00"
+      },
+      {
+        "y_idx": 286,
+        "ifp_id": "1288-0",
+        "short_title": "Venezuela Political Crisis",
+        "date_start": "2013-11-20T00:00:00",
+        "date_closed": "2014-02-28T00:00:00"
+      },
+      {
+        "y_idx": 287,
+        "ifp_id": "1274-0",
+        "short_title": "3d Printing in Lethal Confrontation",
+        "date_start": "2013-11-20T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 288,
+        "ifp_id": "1324-0",
+        "short_title": "Kosovo Election Violence",
+        "date_start": "2013-12-04T00:00:00",
+        "date_closed": "2013-12-30T00:00:00"
+      },
+      {
+        "y_idx": 289,
+        "ifp_id": "1310-0",
+        "short_title": "Eurasian Customs Union",
+        "date_start": "2013-12-04T00:00:00",
+        "date_closed": "2014-02-16T00:00:00"
+      },
+      {
+        "y_idx": 290,
+        "ifp_id": "1322-0",
+        "short_title": "European Commission - Italy",
+        "date_start": "2013-12-04T00:00:00",
+        "date_closed": "2014-02-28T00:00:00"
+      },
+      {
+        "y_idx": 291,
+        "ifp_id": "1323-2",
+        "short_title": "South Korea / Japan Pact",
+        "date_start": "2013-12-04T00:00:00",
+        "date_closed": "2014-02-28T00:00:00"
+      },
+      {
+        "y_idx": 292,
+        "ifp_id": "1325-0",
+        "short_title": "TTIP Agreement",
+        "date_start": "2013-12-04T00:00:00",
+        "date_closed": "2014-02-28T00:00:00"
+      },
+      {
+        "y_idx": 293,
+        "ifp_id": "1321-0",
+        "short_title": "Guinea-Bissau Elections",
+        "date_start": "2013-12-04T00:00:00",
+        "date_closed": "2014-03-16T00:00:00"
+      },
+      {
+        "y_idx": 294,
+        "ifp_id": "1320-0",
+        "short_title": "China Arrests Wang Zheng",
+        "date_start": "2013-12-04T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 295,
+        "ifp_id": "1335-0",
+        "short_title": "IAEA Iran Inspections",
+        "date_start": "2014-01-08T00:00:00",
+        "date_closed": "2014-02-08T00:00:00"
+      },
+      {
+        "y_idx": 296,
+        "ifp_id": "1327-0",
+        "short_title": "Turkey EC Negotiations",
+        "date_start": "2014-01-08T00:00:00",
+        "date_closed": "2014-02-28T00:00:00"
+      },
+      {
+        "y_idx": 297,
+        "ifp_id": "1339-6",
+        "short_title": "Syrian Refugees",
+        "date_start": "2014-01-08T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 298,
+        "ifp_id": "1333-0",
+        "short_title": "Six-Party Talks",
+        "date_start": "2014-01-08T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 299,
+        "ifp_id": "1340-0",
+        "short_title": "Israel Release Palestinian Prisoners",
+        "date_start": "2014-01-08T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 300,
+        "ifp_id": "1341-0",
+        "short_title": "Thailand Parliamentary Elections",
+        "date_start": "2014-01-15T00:00:00",
+        "date_closed": "2014-01-25T00:00:00"
+      },
+      {
+        "y_idx": 301,
+        "ifp_id": "1328-0",
+        "short_title": "Slovenian Loan",
+        "date_start": "2014-01-15T00:00:00",
+        "date_closed": "2014-03-30T00:00:00"
+      },
+      {
+        "y_idx": 302,
+        "ifp_id": "1334-6",
+        "short_title": "Japanese Reactors Operational",
+        "date_start": "2014-01-15T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 303,
+        "ifp_id": "1342-0",
+        "short_title": "Japan Inflation Rate",
+        "date_start": "2014-01-15T00:00:00",
+        "date_closed": "2014-04-24T00:00:00"
+      },
+      {
+        "y_idx": 304,
+        "ifp_id": "1219-2",
+        "short_title": "Myanmar - Myitsone Dam",
+        "date_start": "2014-01-15T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 305,
+        "ifp_id": "1330-0",
+        "short_title": "US/EU Data Privacy Agreement",
+        "date_start": "2014-01-15T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 306,
+        "ifp_id": "1336-6",
+        "short_title": "WhatsApp Ban",
+        "date_start": "2014-01-15T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 307,
+        "ifp_id": "1350-0",
+        "short_title": "China Fishing Dispute",
+        "date_start": "2014-01-22T00:00:00",
+        "date_closed": "2014-03-20T00:00:00"
+      },
+      {
+        "y_idx": 308,
+        "ifp_id": "1329-0",
+        "short_title": "Egypt: al-Sisi Candidate for President",
+        "date_start": "2014-01-22T00:00:00",
+        "date_closed": "2014-03-26T00:00:00"
+      },
+      {
+        "y_idx": 309,
+        "ifp_id": "1337-0",
+        "short_title": "Peru-India Trade Agreement",
+        "date_start": "2014-01-22T00:00:00",
+        "date_closed": "2014-03-30T00:00:00"
+      },
+      {
+        "y_idx": 310,
+        "ifp_id": "1344-0",
+        "short_title": "UN Peacekeepers in CAR ",
+        "date_start": "2014-01-22T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 311,
+        "ifp_id": "1332-0",
+        "short_title": "Syrian Political Plan",
+        "date_start": "2014-01-22T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 312,
+        "ifp_id": "1349-0",
+        "short_title": "Japan/China Confrontation",
+        "date_start": "2014-01-22T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 313,
+        "ifp_id": "1351-0",
+        "short_title": "Iran Centrifuges",
+        "date_start": "2014-01-22T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 314,
+        "ifp_id": "1347-2",
+        "short_title": "Yanukovich as Ukraine President",
+        "date_start": "2014-02-05T00:00:00",
+        "date_closed": "2014-02-21T00:00:00"
+      },
+      {
+        "y_idx": 315,
+        "ifp_id": "1359-6",
+        "short_title": "Thailand State of Emergency",
+        "date_start": "2014-02-05T00:00:00",
+        "date_closed": "2014-03-17T00:00:00"
+      },
+      {
+        "y_idx": 316,
+        "ifp_id": "1354-0",
+        "short_title": "Venezuela Gas Subsidies",
+        "date_start": "2014-02-05T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 317,
+        "ifp_id": "1343-6",
+        "short_title": "Mexican Oil Imports to US",
+        "date_start": "2014-02-05T00:00:00",
+        "date_closed": "2014-04-01T00:00:00"
+      },
+      {
+        "y_idx": 318,
+        "ifp_id": "1355-1",
+        "short_title": "Kenneth Bae - North Korea",
+        "date_start": "2014-02-05T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 319,
+        "ifp_id": "1348-0",
+        "short_title": "Ukraine State of Emergency",
+        "date_start": "2014-02-05T00:00:00",
+        "date_closed": "2014-05-09T00:00:00"
+      },
+      {
+        "y_idx": 320,
+        "ifp_id": "1370-2",
+        "short_title": "Korean Family Reunions",
+        "date_start": "2014-02-12T00:00:00",
+        "date_closed": "2014-02-19T00:00:00"
+      },
+      {
+        "y_idx": 321,
+        "ifp_id": "1369-2",
+        "short_title": "Russia Buys Ukrainian Bonds",
+        "date_start": "2014-02-12T00:00:00",
+        "date_closed": "2014-02-28T00:00:00"
+      },
+      {
+        "y_idx": 322,
+        "ifp_id": "1357-0",
+        "short_title": "Colombia Chamber Elections",
+        "date_start": "2014-02-12T00:00:00",
+        "date_closed": "2014-03-09T00:00:00"
+      },
+      {
+        "y_idx": 323,
+        "ifp_id": "1367-1",
+        "short_title": "ECB Interest Rate",
+        "date_start": "2014-02-12T00:00:00",
+        "date_closed": "2014-03-30T00:00:00"
+      },
+      {
+        "y_idx": 324,
+        "ifp_id": "1358-0",
+        "short_title": "China: Zhongye Island",
+        "date_start": "2014-02-12T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 325,
+        "ifp_id": "1371-1",
+        "short_title": "North Korean Missile Launch",
+        "date_start": "2014-02-12T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 326,
+        "ifp_id": "1378-0",
+        "short_title": "EU/US Sanctions on Yanukovich (Ukraine)",
+        "date_start": "2014-02-19T00:00:00",
+        "date_closed": "2014-02-20T00:00:00"
+      },
+      {
+        "y_idx": 327,
+        "ifp_id": "1373-0",
+        "short_title": "UNHRC - Sri Lanka",
+        "date_start": "2014-02-19T00:00:00",
+        "date_closed": "2014-03-26T00:00:00"
+      },
+      {
+        "y_idx": 328,
+        "ifp_id": "1372-0",
+        "short_title": "Syria Chemical Weapons",
+        "date_start": "2014-02-19T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 329,
+        "ifp_id": "1345-2",
+        "short_title": "TPP Negotiations",
+        "date_start": "2014-02-19T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 330,
+        "ifp_id": "1361-6",
+        "short_title": "Bitcoin Restrictions",
+        "date_start": "2014-02-19T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 331,
+        "ifp_id": "1363-6",
+        "short_title": "CAR Refugees",
+        "date_start": "2014-02-19T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 332,
+        "ifp_id": "1376-0",
+        "short_title": "Currency/Capital Controls",
+        "date_start": "2014-02-19T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 333,
+        "ifp_id": "1391-0",
+        "short_title": "Russia-Ukraine Confrontation",
+        "date_start": "2014-03-05T00:00:00",
+        "date_closed": "2014-03-31T00:00:00"
+      },
+      {
+        "y_idx": 334,
+        "ifp_id": "1353-0",
+        "short_title": "Israeli-Palestinian Peace Talks",
+        "date_start": "2014-03-05T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 335,
+        "ifp_id": "1388-6",
+        "short_title": "Dollar-Hryvnia Exchange Rate",
+        "date_start": "2014-03-05T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 336,
+        "ifp_id": "1392-0",
+        "short_title": "Russia Invades Kharkiv or Donetsk",
+        "date_start": "2014-03-05T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 337,
+        "ifp_id": "1368-0",
+        "short_title": "Pakistan-TTP Peace Agreement",
+        "date_start": "2014-03-05T00:00:00",
+        "date_closed": "2014-05-09T00:00:00"
+      },
+      {
+        "y_idx": 338,
+        "ifp_id": "1386-0",
+        "short_title": "Turkey: Erdogan Vacates Office",
+        "date_start": "2014-03-05T00:00:00",
+        "date_closed": "2014-05-09T00:00:00"
+      },
+      {
+        "y_idx": 339,
+        "ifp_id": "1379-6",
+        "short_title": "Thailand: Shinawatra leaves office",
+        "date_start": "2014-03-12T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 340,
+        "ifp_id": "6379-0",
+        "short_title": "Thailand: Shinawatra leaves office",
+        "date_start": "2014-03-12T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 341,
+        "ifp_id": "1352-0",
+        "short_title": "Attack on Israel",
+        "date_start": "2014-03-12T00:00:00",
+        "date_closed": "2014-05-09T00:00:00"
+      },
+      {
+        "y_idx": 342,
+        "ifp_id": "1393-0",
+        "short_title": "Arab Ambassadors to Qatar",
+        "date_start": "2014-03-12T00:00:00",
+        "date_closed": "2014-05-09T00:00:00"
+      },
+      {
+        "y_idx": 343,
+        "ifp_id": "1383-0",
+        "short_title": "Afghanistan Presidential Elections",
+        "date_start": "2014-03-12T00:00:00",
+        "date_closed": "2014-09-20T00:00:00"
+      },
+      {
+        "y_idx": 344,
+        "ifp_id": "1394-0",
+        "short_title": "China: Second Thomas Shoal",
+        "date_start": "2014-03-12T00:00:00",
+        "date_closed": "2014-12-30T00:00:00"
+      },
+      {
+        "y_idx": 345,
+        "ifp_id": "1398-0",
+        "short_title": "Quebec Elections",
+        "date_start": "2014-03-19T00:00:00",
+        "date_closed": "2014-04-07T00:00:00"
+      },
+      {
+        "y_idx": 346,
+        "ifp_id": "1400-0",
+        "short_title": "China GDP Growth",
+        "date_start": "2014-03-19T00:00:00",
+        "date_closed": "2014-04-15T00:00:00"
+      },
+      {
+        "y_idx": 347,
+        "ifp_id": "1397-0",
+        "short_title": "Myanmar Ceasefire",
+        "date_start": "2014-03-19T00:00:00",
+        "date_closed": "2014-04-30T00:00:00"
+      },
+      {
+        "y_idx": 348,
+        "ifp_id": "1396-6",
+        "short_title": "Nigeria: Boko Haram Fatalities",
+        "date_start": "2014-03-19T00:00:00",
+        "date_closed": "2014-05-03T00:00:00"
+      },
+      {
+        "y_idx": 349,
+        "ifp_id": "1366-0",
+        "short_title": "Bank of Japan: Qualitative Easing",
+        "date_start": "2014-03-19T00:00:00",
+        "date_closed": "2014-05-09T00:00:00"
+      },
+      {
+        "y_idx": 350,
+        "ifp_id": "1401-0",
+        "short_title": "Russia/Iran Joint Naval Exercise",
+        "date_start": "2014-03-19T00:00:00",
+        "date_closed": "2014-05-09T00:00:00"
+      },
+      {
+        "y_idx": 351,
+        "ifp_id": "1402-2",
+        "short_title": "Russia Annex More of Ukraine",
+        "date_start": "2014-04-02T00:00:00",
+        "date_closed": "2014-05-09T00:00:00"
+      },
+      {
+        "y_idx": 352,
+        "ifp_id": "1403-0",
+        "short_title": "Iran: Arak Reactor Agreement",
+        "date_start": "2014-04-02T00:00:00",
+        "date_closed": "2014-05-09T00:00:00"
+      },
+      {
+        "y_idx": 353,
+        "ifp_id": "1399-2",
+        "short_title": "Quebec Referendum",
+        "date_start": "2014-04-02T00:00:00",
+        "date_closed": "2014-12-30T00:00:00"
+      },
+      {
+        "y_idx": 354,
+        "ifp_id": "1408-6",
+        "short_title": "New Ebola Cases",
+        "date_start": "2014-04-09T00:00:00",
+        "date_closed": "2014-05-08T00:00:00"
+      },
+      {
+        "y_idx": 355,
+        "ifp_id": "1406-0",
+        "short_title": "Iran/Russia Oil Agreement",
+        "date_start": "2014-04-09T00:00:00",
+        "date_closed": "2014-05-09T00:00:00"
+      },
+      {
+        "y_idx": 356,
+        "ifp_id": "1405-0",
+        "short_title": "Iraq Elections - Maliki",
+        "date_start": "2014-04-16T00:00:00",
+        "date_closed": "2014-05-19T00:00:00"
+      },
+      {
+        "y_idx": 357,
+        "ifp_id": "1450-0",
+        "short_title": "OPEC Cut Output",
+        "date_start": "2014-10-15T00:00:00",
+        "date_closed": "2014-11-27T00:00:00"
+      },
+      {
+        "y_idx": 358,
+        "ifp_id": "1449-0",
+        "short_title": "China Police in Hong Kong",
+        "date_start": "2014-10-15T00:00:00",
+        "date_closed": "2014-11-30T00:00:00"
+      },
+      {
+        "y_idx": 359,
+        "ifp_id": "1451-6",
+        "short_title": "India Pakistan Foreign Secretaries",
+        "date_start": "2014-10-15T00:00:00",
+        "date_closed": "2015-01-31T00:00:00"
+      },
+      {
+        "y_idx": 360,
+        "ifp_id": "1452-6",
+        "short_title": "Ebola Containment",
+        "date_start": "2014-10-15T00:00:00",
+        "date_closed": "2015-06-01T00:00:00"
+      },
+      {
+        "y_idx": 361,
+        "ifp_id": "6413-0",
+        "short_title": "Kurdistan Referendum",
+        "date_start": "2014-10-17T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 362,
+        "ifp_id": "1453-0",
+        "short_title": "Asian Infrastructure Investment Bank",
+        "date_start": "2014-10-22T00:00:00",
+        "date_closed": "2014-11-10T00:00:00"
+      },
+      {
+        "y_idx": 363,
+        "ifp_id": "1454-0",
+        "short_title": "German GDP",
+        "date_start": "2014-10-22T00:00:00",
+        "date_closed": "2014-11-13T00:00:00"
+      },
+      {
+        "y_idx": 364,
+        "ifp_id": "1456-6",
+        "short_title": "Chinese Power Consumption",
+        "date_start": "2014-10-22T00:00:00",
+        "date_closed": "2015-01-15T00:00:00"
+      },
+      {
+        "y_idx": 365,
+        "ifp_id": "1457-0",
+        "short_title": "Syrian No-Fly Zone",
+        "date_start": "2014-10-22T00:00:00",
+        "date_closed": "2015-02-28T00:00:00"
+      },
+      {
+        "y_idx": 366,
+        "ifp_id": "1455-0",
+        "short_title": "Iran Hosts Head of State",
+        "date_start": "2014-10-22T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 367,
+        "ifp_id": "1458-0",
+        "short_title": "Okinawa governors race",
+        "date_start": "2014-10-29T00:00:00",
+        "date_closed": "2014-11-15T00:00:00"
+      },
+      {
+        "y_idx": 368,
+        "ifp_id": "1461-0",
+        "short_title": "Iran/Pakistan Lethal confrontation  ",
+        "date_start": "2014-10-29T00:00:00",
+        "date_closed": "2014-12-14T00:00:00"
+      },
+      {
+        "y_idx": 369,
+        "ifp_id": "1460-0",
+        "short_title": "Global temperatures",
+        "date_start": "2014-10-29T00:00:00",
+        "date_closed": "2015-01-15T00:00:00"
+      },
+      {
+        "y_idx": 370,
+        "ifp_id": "1459-0",
+        "short_title": "Goodluck Jonathan vacate office",
+        "date_start": "2014-10-29T00:00:00",
+        "date_closed": "2015-05-28T00:00:00"
+      },
+      {
+        "y_idx": 371,
+        "ifp_id": "1462-0",
+        "short_title": "Iraqi National Guard",
+        "date_start": "2014-10-29T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 372,
+        "ifp_id": "1464-0",
+        "short_title": "Iron ore price",
+        "date_start": "2014-11-12T00:00:00",
+        "date_closed": "2014-11-19T00:00:00"
+      },
+      {
+        "y_idx": 373,
+        "ifp_id": "1463-6",
+        "short_title": "Americans in Iran",
+        "date_start": "2014-11-12T00:00:00",
+        "date_closed": "2015-02-28T00:00:00"
+      },
+      {
+        "y_idx": 374,
+        "ifp_id": "1465-6",
+        "short_title": "Military operation in Eastern DRC",
+        "date_start": "2014-11-12T00:00:00",
+        "date_closed": "2015-03-31T00:00:00"
+      },
+      {
+        "y_idx": 375,
+        "ifp_id": "1466-0",
+        "short_title": "NATO Article 5",
+        "date_start": "2014-11-12T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 376,
+        "ifp_id": "1471-6",
+        "short_title": "Russia ICBM test",
+        "date_start": "2014-11-19T00:00:00",
+        "date_closed": "2014-11-28T00:00:00"
+      },
+      {
+        "y_idx": 377,
+        "ifp_id": "1468-6",
+        "short_title": "Mistral delivery",
+        "date_start": "2014-11-19T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 378,
+        "ifp_id": "1470-6",
+        "short_title": "Rajoy vacate office",
+        "date_start": "2014-11-19T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 379,
+        "ifp_id": "1469-0",
+        "short_title": "UNSC - North Korea to ICC",
+        "date_start": "2014-11-19T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 380,
+        "ifp_id": "1476-0",
+        "short_title": "Russia credit rating",
+        "date_start": "2014-12-03T00:00:00",
+        "date_closed": "2015-01-26T00:00:00"
+      },
+      {
+        "y_idx": 381,
+        "ifp_id": "1474-0",
+        "short_title": "Netanyahu Vacate Office",
+        "date_start": "2014-12-03T00:00:00",
+        "date_closed": "2015-04-30T00:00:00"
+      },
+      {
+        "y_idx": 382,
+        "ifp_id": "1475-0",
+        "short_title": "Saudi private sector",
+        "date_start": "2014-12-03T00:00:00",
+        "date_closed": "2015-06-03T00:00:00"
+      },
+      {
+        "y_idx": 383,
+        "ifp_id": "1473-6",
+        "short_title": "India/Israel FTA",
+        "date_start": "2014-12-03T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 384,
+        "ifp_id": "1477-0",
+        "short_title": "IMF adding renminbi to SDR",
+        "date_start": "2014-12-03T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 385,
+        "ifp_id": "1481-6",
+        "short_title": "H5N8 cases",
+        "date_start": "2014-12-10T00:00:00",
+        "date_closed": "2014-12-14T00:00:00"
+      },
+      {
+        "y_idx": 386,
+        "ifp_id": "1478-0",
+        "short_title": "China refuse UK lawmakers",
+        "date_start": "2014-12-10T00:00:00",
+        "date_closed": "2015-02-28T00:00:00"
+      },
+      {
+        "y_idx": 387,
+        "ifp_id": "1479-6",
+        "short_title": "Ebola in Nigeria",
+        "date_start": "2014-12-10T00:00:00",
+        "date_closed": "2015-03-15T00:00:00"
+      },
+      {
+        "y_idx": 388,
+        "ifp_id": "1482-0",
+        "short_title": "Fuzzy Set 1 - Jordan",
+        "date_start": "2014-12-10T00:00:00",
+        "date_closed": "2015-06-01T00:00:00"
+      },
+      {
+        "y_idx": 389,
+        "ifp_id": "1480-0",
+        "short_title": "Russia INF Treaty",
+        "date_start": "2014-12-10T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 390,
+        "ifp_id": "1483-0",
+        "short_title": "Greek Parliament",
+        "date_start": "2015-01-07T00:00:00",
+        "date_closed": "2015-01-25T00:00:00"
+      },
+      {
+        "y_idx": 391,
+        "ifp_id": "1484-0",
+        "short_title": "IMF Global Growth Figure",
+        "date_start": "2015-01-07T00:00:00",
+        "date_closed": "2015-04-13T00:00:00"
+      },
+      {
+        "y_idx": 392,
+        "ifp_id": "1488-6",
+        "short_title": "Dollar-Ruble take 2",
+        "date_start": "2015-01-07T00:00:00",
+        "date_closed": "2015-04-30T00:00:00"
+      },
+      {
+        "y_idx": 393,
+        "ifp_id": "1485-6",
+        "short_title": "Venezuela default",
+        "date_start": "2015-01-07T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 394,
+        "ifp_id": "1486-0",
+        "short_title": "Fuzzy Set 1 - Cuba",
+        "date_start": "2015-01-07T00:00:00",
+        "date_closed": "2015-06-01T00:00:00"
+      },
+      {
+        "y_idx": 395,
+        "ifp_id": "1487-0",
+        "short_title": "East China Sea confrontation",
+        "date_start": "2015-01-07T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 396,
+        "ifp_id": "1493-6",
+        "short_title": "Petrobras Default",
+        "date_start": "2015-01-14T00:00:00",
+        "date_closed": "2015-01-27T00:00:00"
+      },
+      {
+        "y_idx": 397,
+        "ifp_id": "1492-6",
+        "short_title": "Myanmar Ceasefire",
+        "date_start": "2015-01-14T00:00:00",
+        "date_closed": "2015-04-30T00:00:00"
+      },
+      {
+        "y_idx": 398,
+        "ifp_id": "1489-6",
+        "short_title": "Russia-China Naval Exercises",
+        "date_start": "2015-01-14T00:00:00",
+        "date_closed": "2015-05-10T00:00:00"
+      },
+      {
+        "y_idx": 399,
+        "ifp_id": "1490-0",
+        "short_title": "PBC-Fed Currency Swap",
+        "date_start": "2015-01-14T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 400,
+        "ifp_id": "1491-6",
+        "short_title": "North Pole Claims",
+        "date_start": "2015-01-14T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 401,
+        "ifp_id": "1494-0",
+        "short_title": "Attack in Europe",
+        "date_start": "2015-01-21T00:00:00",
+        "date_closed": "2015-02-02T00:00:00"
+      },
+      {
+        "y_idx": 402,
+        "ifp_id": "1496-0",
+        "short_title": "North Korea South Korea talks",
+        "date_start": "2015-01-21T00:00:00",
+        "date_closed": "2015-03-31T00:00:00"
+      },
+      {
+        "y_idx": 403,
+        "ifp_id": "1495-6",
+        "short_title": "Korean Family Reunions",
+        "date_start": "2015-01-21T00:00:00",
+        "date_closed": "2015-04-30T00:00:00"
+      },
+      {
+        "y_idx": 404,
+        "ifp_id": "1498-0",
+        "short_title": "British Elections",
+        "date_start": "2015-01-21T00:00:00",
+        "date_closed": "2015-05-07T00:00:00"
+      },
+      {
+        "y_idx": 405,
+        "ifp_id": "1499-0",
+        "short_title": "Libya Unity Government",
+        "date_start": "2015-01-21T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 406,
+        "ifp_id": "1497-0",
+        "short_title": "Fuzzy Set 1 - Iran",
+        "date_start": "2015-01-21T00:00:00",
+        "date_closed": "2015-06-01T00:00:00"
+      },
+      {
+        "y_idx": 407,
+        "ifp_id": "1500-6",
+        "short_title": "S&P Downgrade Greece",
+        "date_start": "2015-02-04T00:00:00",
+        "date_closed": "2015-02-06T00:00:00"
+      },
+      {
+        "y_idx": 408,
+        "ifp_id": "1501-0",
+        "short_title": "Netanyahu Speaks to Congress",
+        "date_start": "2015-02-04T00:00:00",
+        "date_closed": "2015-03-02T00:00:00"
+      },
+      {
+        "y_idx": 409,
+        "ifp_id": "1502-0",
+        "short_title": "Saudi/Yemen Conflict",
+        "date_start": "2015-02-04T00:00:00",
+        "date_closed": "2015-03-24T00:00:00"
+      },
+      {
+        "y_idx": 410,
+        "ifp_id": "1503-6",
+        "short_title": "Iron Ore Spot Price",
+        "date_start": "2015-02-04T00:00:00",
+        "date_closed": "2015-03-29T00:00:00"
+      },
+      {
+        "y_idx": 411,
+        "ifp_id": "1505-0",
+        "short_title": "Ethiopia Domestic Conflict",
+        "date_start": "2015-02-04T00:00:00",
+        "date_closed": "2015-06-01T00:00:00"
+      },
+      {
+        "y_idx": 412,
+        "ifp_id": "1504-0",
+        "short_title": "Any Country Exit Eurozone",
+        "date_start": "2015-02-04T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 413,
+        "ifp_id": "1508-0",
+        "short_title": "China Blue Water Exercises",
+        "date_start": "2015-02-11T00:00:00",
+        "date_closed": "2015-02-16T00:00:00"
+      },
+      {
+        "y_idx": 414,
+        "ifp_id": "1507-0",
+        "short_title": "Dollar-Euro",
+        "date_start": "2015-02-11T00:00:00",
+        "date_closed": "2015-03-06T00:00:00"
+      },
+      {
+        "y_idx": 415,
+        "ifp_id": "1509-0",
+        "short_title": "Sinai State of Emergency",
+        "date_start": "2015-02-11T00:00:00",
+        "date_closed": "2015-04-25T00:00:00"
+      },
+      {
+        "y_idx": 416,
+        "ifp_id": "1506-0",
+        "short_title": "China Services PMI",
+        "date_start": "2015-02-11T00:00:00",
+        "date_closed": "2015-06-03T00:00:00"
+      },
+      {
+        "y_idx": 417,
+        "ifp_id": "1513-0",
+        "short_title": "Kirchner Vacate Office",
+        "date_start": "2015-02-18T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 418,
+        "ifp_id": "1514-0",
+        "short_title": "Saudi Arabia - Iran Meeting",
+        "date_start": "2015-02-18T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 419,
+        "ifp_id": "1515-0",
+        "short_title": "Russia on the SWIFT Exchange",
+        "date_start": "2015-02-18T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 420,
+        "ifp_id": "1511-6",
+        "short_title": "Iran Sanctions",
+        "date_start": "2015-02-18T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 421,
+        "ifp_id": "1512-0",
+        "short_title": "NK-Russia Military Exercises",
+        "date_start": "2015-02-18T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 422,
+        "ifp_id": "1516-0",
+        "short_title": "Nigeria Elections",
+        "date_start": "2015-03-04T00:00:00",
+        "date_closed": "2015-03-27T00:00:00"
+      },
+      {
+        "y_idx": 423,
+        "ifp_id": "1517-6",
+        "short_title": "Oil Volatility Index",
+        "date_start": "2015-03-04T00:00:00",
+        "date_closed": "2015-04-22T00:00:00"
+      },
+      {
+        "y_idx": 424,
+        "ifp_id": "1518-6",
+        "short_title": "Maduro Vacate Office",
+        "date_start": "2015-03-04T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 425,
+        "ifp_id": "1520-0",
+        "short_title": "China India Lethal Confrontation ",
+        "date_start": "2015-03-04T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 426,
+        "ifp_id": "1519-0",
+        "short_title": "Iran Russia Weapons Sale ",
+        "date_start": "2015-03-04T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 427,
+        "ifp_id": "1521-6",
+        "short_title": "Iran Nuclear Agreement",
+        "date_start": "2015-03-11T00:00:00",
+        "date_closed": "2015-04-02T00:00:00"
+      },
+      {
+        "y_idx": 428,
+        "ifp_id": "1524-0",
+        "short_title": "Abbott Vacate Office",
+        "date_start": "2015-03-11T00:00:00",
+        "date_closed": "2015-05-31T00:00:00"
+      },
+      {
+        "y_idx": 429,
+        "ifp_id": "1522-0",
+        "short_title": "Chinese Yuan Trading Band",
+        "date_start": "2015-03-11T00:00:00",
+        "date_closed": "2015-06-01T00:00:00"
+      },
+      {
+        "y_idx": 430,
+        "ifp_id": "1523-6",
+        "short_title": "Putin Approval Rating",
+        "date_start": "2015-03-11T00:00:00",
+        "date_closed": "2015-06-01T00:00:00"
+      },
+      {
+        "y_idx": 431,
+        "ifp_id": "1525-0",
+        "short_title": "Rezaian Release ",
+        "date_start": "2015-03-11T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 432,
+        "ifp_id": "1526-0",
+        "short_title": "Asian Infrastructure Investment Bank",
+        "date_start": "2015-03-18T00:00:00",
+        "date_closed": "2015-03-28T00:00:00"
+      },
+      {
+        "y_idx": 433,
+        "ifp_id": "1527-0",
+        "short_title": "Greece Bailout",
+        "date_start": "2015-03-18T00:00:00",
+        "date_closed": "2015-04-30T00:00:00"
+      },
+      {
+        "y_idx": 434,
+        "ifp_id": "1530-6",
+        "short_title": "UKIP Vote Percentage",
+        "date_start": "2015-03-18T00:00:00",
+        "date_closed": "2015-05-07T00:00:00"
+      },
+      {
+        "y_idx": 435,
+        "ifp_id": "1528-6",
+        "short_title": "Euro-Dollar Exchange Rate",
+        "date_start": "2015-03-18T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 436,
+        "ifp_id": "1529-0",
+        "short_title": "Taliban Talks",
+        "date_start": "2015-03-18T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 437,
+        "ifp_id": "1531-6",
+        "short_title": "Ground Offensive in Yemen",
+        "date_start": "2015-04-01T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 438,
+        "ifp_id": "1532-0",
+        "short_title": "North Korea South Korea Talks",
+        "date_start": "2015-04-01T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 439,
+        "ifp_id": "1533-0",
+        "short_title": "Rousseff Vacate Office",
+        "date_start": "2015-04-01T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 440,
+        "ifp_id": "1534-6",
+        "short_title": "WTI Spot Price",
+        "date_start": "2015-04-01T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 441,
+        "ifp_id": "1535-0",
+        "short_title": "Incapacitation of al-Baghdadi",
+        "date_start": "2015-04-01T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 442,
+        "ifp_id": "1536-6",
+        "short_title": "Renminbi Exchange Rate",
+        "date_start": "2015-04-08T00:00:00",
+        "date_closed": "2015-06-01T00:00:00"
+      },
+      {
+        "y_idx": 443,
+        "ifp_id": "1537-0",
+        "short_title": "Russia Release Detained Estonian",
+        "date_start": "2015-04-08T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 444,
+        "ifp_id": "1538-0",
+        "short_title": "North Korea Release Detained South Korea",
+        "date_start": "2015-04-08T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 445,
+        "ifp_id": "1539-0",
+        "short_title": "UN Arms Embargo on South Sudan",
+        "date_start": "2015-04-15T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 446,
+        "ifp_id": "1540-0",
+        "short_title": "Ukraine Referendum",
+        "date_start": "2015-04-15T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 447,
+        "ifp_id": "1543-0",
+        "short_title": "Assad Vacate Office",
+        "date_start": "2015-04-29T00:00:00",
+        "date_closed": "2015-06-09T00:00:00"
+      },
+      {
+        "y_idx": 448,
+        "ifp_id": "1541-0",
+        "short_title": "Lethal Confrontation in the Gulf of Aden",
+        "date_start": "2015-04-29T00:00:00",
+        "date_closed": "2015-06-10T00:00:00"
+      },
+      {
+        "y_idx": 449,
+        "ifp_id": "1542-0",
+        "short_title": "Nikkei Index",
+        "date_start": "2015-04-29T00:00:00",
+        "date_closed": "2015-06-10T00:00:00"
+      },
+      {
+        "y_idx": 450,
+        "ifp_id": "1544-0",
+        "short_title": "Gold Spot Price",
+        "date_start": "2015-04-29T00:00:00",
+        "date_closed": "2015-06-10T00:00:00"
+      }
+    ]
+  }
+}

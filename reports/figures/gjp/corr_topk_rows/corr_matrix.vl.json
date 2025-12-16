@@ -1,0 +1,1145 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "axis": {
+      "grid": false
+    },
+    "title": {
+      "fontSize": 18
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect"
+      },
+      "encoding": {
+        "color": {
+          "field": "corr",
+          "scale": {
+            "domain": [
+              -1,
+              1
+            ],
+            "scheme": "redblue"
+          },
+          "title": "corr",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "ifp_id_x",
+            "title": "IFP (row)",
+            "type": "nominal"
+          },
+          {
+            "field": "short_title_x",
+            "title": "Title (row)",
+            "type": "nominal"
+          },
+          {
+            "field": "ifp_id_y",
+            "title": "IFP (matched)",
+            "type": "nominal"
+          },
+          {
+            "field": "short_title_y",
+            "title": "Title (matched)",
+            "type": "nominal"
+          },
+          {
+            "field": "corr",
+            "format": ".3f",
+            "title": "corr",
+            "type": "quantitative"
+          },
+          {
+            "field": "r2",
+            "format": ".3f",
+            "title": "corr^2",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "rank",
+          "title": "Rank within row (by corr^2)",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "ifp_id_x",
+          "sort": [
+            "1244-0",
+            "1399-2",
+            "1413-0",
+            "1427-0",
+            "1394-0",
+            "1416-0",
+            "1410-0",
+            "1409-0",
+            "1417-0",
+            "1414-0"
+          ],
+          "title": null,
+          "type": "nominal"
+        }
+      },
+      "name": "view_11f6c5bb94ba899c_0"
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "lineBreak": "\n"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "datum.r2 > 0.36",
+            "value": "white"
+          },
+          "value": "black"
+        },
+        "text": {
+          "field": "cell_label",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "rank",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "ifp_id_x",
+          "sort": [
+            "1244-0",
+            "1399-2",
+            "1413-0",
+            "1427-0",
+            "1394-0",
+            "1416-0",
+            "1410-0",
+            "1409-0",
+            "1417-0",
+            "1414-0"
+          ],
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-4361eab67e157c77700629ab843ffbea"
+  },
+  "height": 700,
+  "params": [
+    {
+      "name": "param_f268f798f41c853e",
+      "select": {
+        "type": "interval"
+      },
+      "bind": "scales",
+      "views": [
+        "view_11f6c5bb94ba899c_0"
+      ]
+    }
+  ],
+  "title": "Top correlations per IFP (ranked within each row)",
+  "width": 900,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-4361eab67e157c77700629ab843ffbea": [
+      {
+        "ifp_id_x": "1244-0",
+        "ifp_id_y": "1410-0",
+        "corr": 0.21207218487323892,
+        "r2": 0.04497461159690923,
+        "short_title_x": "India/Brazil UNSC",
+        "short_title_y": "Scotland Referendum",
+        "rank": 6,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.21\n1410-0"
+      },
+      {
+        "ifp_id_x": "1244-0",
+        "ifp_id_y": "1414-0",
+        "corr": 0.13461811684361502,
+        "r2": 0.018122037382521185,
+        "short_title_x": "India/Brazil UNSC",
+        "short_title_y": "Arctic Sea Ice",
+        "rank": 8,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.13\n1414-0"
+      },
+      {
+        "ifp_id_x": "1244-0",
+        "ifp_id_y": "1394-0",
+        "corr": 0.277658778633708,
+        "r2": 0.07709439735236248,
+        "short_title_x": "India/Brazil UNSC",
+        "short_title_y": "China: Second Thomas Shoal",
+        "rank": 2,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.28\n1394-0"
+      },
+      {
+        "ifp_id_x": "1244-0",
+        "ifp_id_y": "1427-0",
+        "corr": 0.2512111232926668,
+        "r2": 0.06310702846596344,
+        "short_title_x": "India/Brazil UNSC",
+        "short_title_y": "Russia annexation of Ukraine",
+        "rank": 4,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.25\n1427-0"
+      },
+      {
+        "ifp_id_x": "1244-0",
+        "ifp_id_y": "1399-2",
+        "corr": 0.32574868037862603,
+        "r2": 0.10611220276841626,
+        "short_title_x": "India/Brazil UNSC",
+        "short_title_y": "Quebec Referendum",
+        "rank": 1,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.33\n1399-2"
+      },
+      {
+        "ifp_id_x": "1244-0",
+        "ifp_id_y": "1416-0",
+        "corr": 0.23839504176280313,
+        "r2": 0.056832195937088645,
+        "short_title_x": "India/Brazil UNSC",
+        "short_title_y": "North Korea nuclear device",
+        "rank": 5,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.24\n1416-0"
+      },
+      {
+        "ifp_id_x": "1244-0",
+        "ifp_id_y": "1409-0",
+        "corr": -0.18952550554102804,
+        "r2": 0.03591991725058225,
+        "short_title_x": "India/Brazil UNSC",
+        "short_title_y": "Brazil Presidential Runoff",
+        "rank": 7,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "-0.19\n1409-0"
+      },
+      {
+        "ifp_id_x": "1244-0",
+        "ifp_id_y": "1413-0",
+        "corr": 0.26055175520135637,
+        "r2": 0.06788721713850754,
+        "short_title_x": "India/Brazil UNSC",
+        "short_title_y": "Kurdistan Referendum",
+        "rank": 3,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.26\n1413-0"
+      },
+      {
+        "ifp_id_x": "1244-0",
+        "ifp_id_y": "1417-0",
+        "corr": 0.0757052897985199,
+        "r2": 0.005731290903477881,
+        "short_title_x": "India/Brazil UNSC",
+        "short_title_y": "Kim Jong Un meeting head of state ",
+        "rank": 9,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.08\n1417-0"
+      },
+      {
+        "ifp_id_x": "1410-0",
+        "ifp_id_y": "1244-0",
+        "corr": 0.21207218487323892,
+        "r2": 0.04497461159690923,
+        "short_title_x": "Scotland Referendum",
+        "short_title_y": "India/Brazil UNSC",
+        "rank": 2,
+        "row_r2_max": 0.055081474469826884,
+        "cell_label": "0.21\n1244-0"
+      },
+      {
+        "ifp_id_x": "1410-0",
+        "ifp_id_y": "1414-0",
+        "corr": 0.132224898011467,
+        "r2": 0.01748342365414285,
+        "short_title_x": "Scotland Referendum",
+        "short_title_y": "Arctic Sea Ice",
+        "rank": 8,
+        "row_r2_max": 0.055081474469826884,
+        "cell_label": "0.13\n1414-0"
+      },
+      {
+        "ifp_id_x": "1410-0",
+        "ifp_id_y": "1394-0",
+        "corr": 0.1546853173033269,
+        "r2": 0.023927547389230926,
+        "short_title_x": "Scotland Referendum",
+        "short_title_y": "China: Second Thomas Shoal",
+        "rank": 5,
+        "row_r2_max": 0.055081474469826884,
+        "cell_label": "0.15\n1394-0"
+      },
+      {
+        "ifp_id_x": "1410-0",
+        "ifp_id_y": "1427-0",
+        "corr": 0.1536509218931702,
+        "r2": 0.02360860579862109,
+        "short_title_x": "Scotland Referendum",
+        "short_title_y": "Russia annexation of Ukraine",
+        "rank": 6,
+        "row_r2_max": 0.055081474469826884,
+        "cell_label": "0.15\n1427-0"
+      },
+      {
+        "ifp_id_x": "1410-0",
+        "ifp_id_y": "1399-2",
+        "corr": 0.23469442786275707,
+        "r2": 0.055081474469826884,
+        "short_title_x": "Scotland Referendum",
+        "short_title_y": "Quebec Referendum",
+        "rank": 1,
+        "row_r2_max": 0.055081474469826884,
+        "cell_label": "0.23\n1399-2"
+      },
+      {
+        "ifp_id_x": "1410-0",
+        "ifp_id_y": "1416-0",
+        "corr": 0.14785296150170343,
+        "r2": 0.021860498224824196,
+        "short_title_x": "Scotland Referendum",
+        "short_title_y": "North Korea nuclear device",
+        "rank": 7,
+        "row_r2_max": 0.055081474469826884,
+        "cell_label": "0.15\n1416-0"
+      },
+      {
+        "ifp_id_x": "1410-0",
+        "ifp_id_y": "1409-0",
+        "corr": -0.16204974892575807,
+        "r2": 0.02626012112690123,
+        "short_title_x": "Scotland Referendum",
+        "short_title_y": "Brazil Presidential Runoff",
+        "rank": 3,
+        "row_r2_max": 0.055081474469826884,
+        "cell_label": "-0.16\n1409-0"
+      },
+      {
+        "ifp_id_x": "1410-0",
+        "ifp_id_y": "1413-0",
+        "corr": 0.15904764988087555,
+        "r2": 0.025296154932629572,
+        "short_title_x": "Scotland Referendum",
+        "short_title_y": "Kurdistan Referendum",
+        "rank": 4,
+        "row_r2_max": 0.055081474469826884,
+        "cell_label": "0.16\n1413-0"
+      },
+      {
+        "ifp_id_x": "1410-0",
+        "ifp_id_y": "1417-0",
+        "corr": 0.08446018184952885,
+        "r2": 0.007133522318055482,
+        "short_title_x": "Scotland Referendum",
+        "short_title_y": "Kim Jong Un meeting head of state ",
+        "rank": 9,
+        "row_r2_max": 0.055081474469826884,
+        "cell_label": "0.08\n1417-0"
+      },
+      {
+        "ifp_id_x": "1414-0",
+        "ifp_id_y": "1244-0",
+        "corr": 0.13461811684361502,
+        "r2": 0.018122037382521185,
+        "short_title_x": "Arctic Sea Ice",
+        "short_title_y": "India/Brazil UNSC",
+        "rank": 1,
+        "row_r2_max": 0.018122037382521185,
+        "cell_label": "0.13\n1244-0"
+      },
+      {
+        "ifp_id_x": "1414-0",
+        "ifp_id_y": "1410-0",
+        "corr": 0.132224898011467,
+        "r2": 0.01748342365414285,
+        "short_title_x": "Arctic Sea Ice",
+        "short_title_y": "Scotland Referendum",
+        "rank": 2,
+        "row_r2_max": 0.018122037382521185,
+        "cell_label": "0.13\n1410-0"
+      },
+      {
+        "ifp_id_x": "1414-0",
+        "ifp_id_y": "1394-0",
+        "corr": 0.03795884216216066,
+        "r2": 0.0014408736982918257,
+        "short_title_x": "Arctic Sea Ice",
+        "short_title_y": "China: Second Thomas Shoal",
+        "rank": 9,
+        "row_r2_max": 0.018122037382521185,
+        "cell_label": "0.04\n1394-0"
+      },
+      {
+        "ifp_id_x": "1414-0",
+        "ifp_id_y": "1427-0",
+        "corr": 0.07267240048024833,
+        "r2": 0.005281277791561597,
+        "short_title_x": "Arctic Sea Ice",
+        "short_title_y": "Russia annexation of Ukraine",
+        "rank": 6,
+        "row_r2_max": 0.018122037382521185,
+        "cell_label": "0.07\n1427-0"
+      },
+      {
+        "ifp_id_x": "1414-0",
+        "ifp_id_y": "1399-2",
+        "corr": 0.10440252073568398,
+        "r2": 0.010899886335964924,
+        "short_title_x": "Arctic Sea Ice",
+        "short_title_y": "Quebec Referendum",
+        "rank": 3,
+        "row_r2_max": 0.018122037382521185,
+        "cell_label": "0.1\n1399-2"
+      },
+      {
+        "ifp_id_x": "1414-0",
+        "ifp_id_y": "1416-0",
+        "corr": 0.05206937671583985,
+        "r2": 0.0027112199915760456,
+        "short_title_x": "Arctic Sea Ice",
+        "short_title_y": "North Korea nuclear device",
+        "rank": 8,
+        "row_r2_max": 0.018122037382521185,
+        "cell_label": "0.05\n1416-0"
+      },
+      {
+        "ifp_id_x": "1414-0",
+        "ifp_id_y": "1409-0",
+        "corr": -0.10189466330280073,
+        "r2": 0.010382522409591125,
+        "short_title_x": "Arctic Sea Ice",
+        "short_title_y": "Brazil Presidential Runoff",
+        "rank": 5,
+        "row_r2_max": 0.018122037382521185,
+        "cell_label": "-0.1\n1409-0"
+      },
+      {
+        "ifp_id_x": "1414-0",
+        "ifp_id_y": "1413-0",
+        "corr": 0.10290819635152498,
+        "r2": 0.01059009687632402,
+        "short_title_x": "Arctic Sea Ice",
+        "short_title_y": "Kurdistan Referendum",
+        "rank": 4,
+        "row_r2_max": 0.018122037382521185,
+        "cell_label": "0.1\n1413-0"
+      },
+      {
+        "ifp_id_x": "1414-0",
+        "ifp_id_y": "1417-0",
+        "corr": 0.06815688952377373,
+        "r2": 0.004645361589555898,
+        "short_title_x": "Arctic Sea Ice",
+        "short_title_y": "Kim Jong Un meeting head of state ",
+        "rank": 7,
+        "row_r2_max": 0.018122037382521185,
+        "cell_label": "0.07\n1417-0"
+      },
+      {
+        "ifp_id_x": "1394-0",
+        "ifp_id_y": "1244-0",
+        "corr": 0.277658778633708,
+        "r2": 0.07709439735236248,
+        "short_title_x": "China: Second Thomas Shoal",
+        "short_title_y": "India/Brazil UNSC",
+        "rank": 1,
+        "row_r2_max": 0.07709439735236248,
+        "cell_label": "0.28\n1244-0"
+      },
+      {
+        "ifp_id_x": "1394-0",
+        "ifp_id_y": "1410-0",
+        "corr": 0.1546853173033269,
+        "r2": 0.023927547389230926,
+        "short_title_x": "China: Second Thomas Shoal",
+        "short_title_y": "Scotland Referendum",
+        "rank": 6,
+        "row_r2_max": 0.07709439735236248,
+        "cell_label": "0.15\n1410-0"
+      },
+      {
+        "ifp_id_x": "1394-0",
+        "ifp_id_y": "1414-0",
+        "corr": 0.03795884216216066,
+        "r2": 0.0014408736982918257,
+        "short_title_x": "China: Second Thomas Shoal",
+        "short_title_y": "Arctic Sea Ice",
+        "rank": 9,
+        "row_r2_max": 0.07709439735236248,
+        "cell_label": "0.04\n1414-0"
+      },
+      {
+        "ifp_id_x": "1394-0",
+        "ifp_id_y": "1427-0",
+        "corr": 0.26300569943096014,
+        "r2": 0.06917199793316854,
+        "short_title_x": "China: Second Thomas Shoal",
+        "short_title_y": "Russia annexation of Ukraine",
+        "rank": 3,
+        "row_r2_max": 0.07709439735236248,
+        "cell_label": "0.26\n1427-0"
+      },
+      {
+        "ifp_id_x": "1394-0",
+        "ifp_id_y": "1399-2",
+        "corr": 0.25833514479542874,
+        "r2": 0.06673704703647514,
+        "short_title_x": "China: Second Thomas Shoal",
+        "short_title_y": "Quebec Referendum",
+        "rank": 4,
+        "row_r2_max": 0.07709439735236248,
+        "cell_label": "0.26\n1399-2"
+      },
+      {
+        "ifp_id_x": "1394-0",
+        "ifp_id_y": "1416-0",
+        "corr": 0.2540101885793347,
+        "r2": 0.06452117590210918,
+        "short_title_x": "China: Second Thomas Shoal",
+        "short_title_y": "North Korea nuclear device",
+        "rank": 5,
+        "row_r2_max": 0.07709439735236248,
+        "cell_label": "0.25\n1416-0"
+      },
+      {
+        "ifp_id_x": "1394-0",
+        "ifp_id_y": "1409-0",
+        "corr": -0.09088896198017929,
+        "r2": 0.008260803409834476,
+        "short_title_x": "China: Second Thomas Shoal",
+        "short_title_y": "Brazil Presidential Runoff",
+        "rank": 7,
+        "row_r2_max": 0.07709439735236248,
+        "cell_label": "-0.09\n1409-0"
+      },
+      {
+        "ifp_id_x": "1394-0",
+        "ifp_id_y": "1413-0",
+        "corr": 0.27016464575159693,
+        "r2": 0.07298893581408586,
+        "short_title_x": "China: Second Thomas Shoal",
+        "short_title_y": "Kurdistan Referendum",
+        "rank": 2,
+        "row_r2_max": 0.07709439735236248,
+        "cell_label": "0.27\n1413-0"
+      },
+      {
+        "ifp_id_x": "1394-0",
+        "ifp_id_y": "1417-0",
+        "corr": 0.06926987255053943,
+        "r2": 0.004798315243167976,
+        "short_title_x": "China: Second Thomas Shoal",
+        "short_title_y": "Kim Jong Un meeting head of state ",
+        "rank": 8,
+        "row_r2_max": 0.07709439735236248,
+        "cell_label": "0.07\n1417-0"
+      },
+      {
+        "ifp_id_x": "1427-0",
+        "ifp_id_y": "1244-0",
+        "corr": 0.2512111232926668,
+        "r2": 0.06310702846596344,
+        "short_title_x": "Russia annexation of Ukraine",
+        "short_title_y": "India/Brazil UNSC",
+        "rank": 4,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.25\n1244-0"
+      },
+      {
+        "ifp_id_x": "1427-0",
+        "ifp_id_y": "1410-0",
+        "corr": 0.1536509218931702,
+        "r2": 0.02360860579862109,
+        "short_title_x": "Russia annexation of Ukraine",
+        "short_title_y": "Scotland Referendum",
+        "rank": 6,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.15\n1410-0"
+      },
+      {
+        "ifp_id_x": "1427-0",
+        "ifp_id_y": "1414-0",
+        "corr": 0.07267240048024834,
+        "r2": 0.005281277791561599,
+        "short_title_x": "Russia annexation of Ukraine",
+        "short_title_y": "Arctic Sea Ice",
+        "rank": 9,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.07\n1414-0"
+      },
+      {
+        "ifp_id_x": "1427-0",
+        "ifp_id_y": "1394-0",
+        "corr": 0.2630056994309601,
+        "r2": 0.06917199793316851,
+        "short_title_x": "Russia annexation of Ukraine",
+        "short_title_y": "China: Second Thomas Shoal",
+        "rank": 3,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.26\n1394-0"
+      },
+      {
+        "ifp_id_x": "1427-0",
+        "ifp_id_y": "1399-2",
+        "corr": 0.2173332000551156,
+        "r2": 0.047233719846196905,
+        "short_title_x": "Russia annexation of Ukraine",
+        "short_title_y": "Quebec Referendum",
+        "rank": 5,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.22\n1399-2"
+      },
+      {
+        "ifp_id_x": "1427-0",
+        "ifp_id_y": "1416-0",
+        "corr": 0.26640740849108774,
+        "r2": 0.0709729072989373,
+        "short_title_x": "Russia annexation of Ukraine",
+        "short_title_y": "North Korea nuclear device",
+        "rank": 2,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.27\n1416-0"
+      },
+      {
+        "ifp_id_x": "1427-0",
+        "ifp_id_y": "1409-0",
+        "corr": -0.13584529093758427,
+        "r2": 0.018453943069916913,
+        "short_title_x": "Russia annexation of Ukraine",
+        "short_title_y": "Brazil Presidential Runoff",
+        "rank": 7,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "-0.14\n1409-0"
+      },
+      {
+        "ifp_id_x": "1427-0",
+        "ifp_id_y": "1413-0",
+        "corr": 0.30522212099608387,
+        "r2": 0.09316054314534807,
+        "short_title_x": "Russia annexation of Ukraine",
+        "short_title_y": "Kurdistan Referendum",
+        "rank": 1,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.31\n1413-0"
+      },
+      {
+        "ifp_id_x": "1427-0",
+        "ifp_id_y": "1417-0",
+        "corr": 0.10028188577238409,
+        "r2": 0.01005645661406549,
+        "short_title_x": "Russia annexation of Ukraine",
+        "short_title_y": "Kim Jong Un meeting head of state ",
+        "rank": 8,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.1\n1417-0"
+      },
+      {
+        "ifp_id_x": "1399-2",
+        "ifp_id_y": "1244-0",
+        "corr": 0.32574868037862603,
+        "r2": 0.10611220276841626,
+        "short_title_x": "Quebec Referendum",
+        "short_title_y": "India/Brazil UNSC",
+        "rank": 1,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.33\n1244-0"
+      },
+      {
+        "ifp_id_x": "1399-2",
+        "ifp_id_y": "1410-0",
+        "corr": 0.23469442786275707,
+        "r2": 0.055081474469826884,
+        "short_title_x": "Quebec Referendum",
+        "short_title_y": "Scotland Referendum",
+        "rank": 4,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.23\n1410-0"
+      },
+      {
+        "ifp_id_x": "1399-2",
+        "ifp_id_y": "1414-0",
+        "corr": 0.10440252073568398,
+        "r2": 0.010899886335964924,
+        "short_title_x": "Quebec Referendum",
+        "short_title_y": "Arctic Sea Ice",
+        "rank": 8,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.1\n1414-0"
+      },
+      {
+        "ifp_id_x": "1399-2",
+        "ifp_id_y": "1394-0",
+        "corr": 0.25833514479542874,
+        "r2": 0.06673704703647514,
+        "short_title_x": "Quebec Referendum",
+        "short_title_y": "China: Second Thomas Shoal",
+        "rank": 2,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.26\n1394-0"
+      },
+      {
+        "ifp_id_x": "1399-2",
+        "ifp_id_y": "1427-0",
+        "corr": 0.2173332000551156,
+        "r2": 0.047233719846196905,
+        "short_title_x": "Quebec Referendum",
+        "short_title_y": "Russia annexation of Ukraine",
+        "rank": 5,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.22\n1427-0"
+      },
+      {
+        "ifp_id_x": "1399-2",
+        "ifp_id_y": "1416-0",
+        "corr": 0.1875362834078975,
+        "r2": 0.03516985759444725,
+        "short_title_x": "Quebec Referendum",
+        "short_title_y": "North Korea nuclear device",
+        "rank": 7,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.19\n1416-0"
+      },
+      {
+        "ifp_id_x": "1399-2",
+        "ifp_id_y": "1409-0",
+        "corr": -0.19445380790966116,
+        "r2": 0.0378122834105674,
+        "short_title_x": "Quebec Referendum",
+        "short_title_y": "Brazil Presidential Runoff",
+        "rank": 6,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "-0.19\n1409-0"
+      },
+      {
+        "ifp_id_x": "1399-2",
+        "ifp_id_y": "1413-0",
+        "corr": 0.2573882951169821,
+        "r2": 0.06624873446322666,
+        "short_title_x": "Quebec Referendum",
+        "short_title_y": "Kurdistan Referendum",
+        "rank": 3,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.26\n1413-0"
+      },
+      {
+        "ifp_id_x": "1399-2",
+        "ifp_id_y": "1417-0",
+        "corr": 0.07460113335284513,
+        "r2": 0.005565329097528982,
+        "short_title_x": "Quebec Referendum",
+        "short_title_y": "Kim Jong Un meeting head of state ",
+        "rank": 9,
+        "row_r2_max": 0.10611220276841626,
+        "cell_label": "0.07\n1417-0"
+      },
+      {
+        "ifp_id_x": "1416-0",
+        "ifp_id_y": "1244-0",
+        "corr": 0.23839504176280313,
+        "r2": 0.056832195937088645,
+        "short_title_x": "North Korea nuclear device",
+        "short_title_y": "India/Brazil UNSC",
+        "rank": 4,
+        "row_r2_max": 0.07105161277669256,
+        "cell_label": "0.24\n1244-0"
+      },
+      {
+        "ifp_id_x": "1416-0",
+        "ifp_id_y": "1410-0",
+        "corr": 0.14785296150170343,
+        "r2": 0.021860498224824196,
+        "short_title_x": "North Korea nuclear device",
+        "short_title_y": "Scotland Referendum",
+        "rank": 7,
+        "row_r2_max": 0.07105161277669256,
+        "cell_label": "0.15\n1410-0"
+      },
+      {
+        "ifp_id_x": "1416-0",
+        "ifp_id_y": "1414-0",
+        "corr": 0.05206937671583985,
+        "r2": 0.0027112199915760456,
+        "short_title_x": "North Korea nuclear device",
+        "short_title_y": "Arctic Sea Ice",
+        "rank": 9,
+        "row_r2_max": 0.07105161277669256,
+        "cell_label": "0.05\n1414-0"
+      },
+      {
+        "ifp_id_x": "1416-0",
+        "ifp_id_y": "1394-0",
+        "corr": 0.2540101885793347,
+        "r2": 0.06452117590210918,
+        "short_title_x": "North Korea nuclear device",
+        "short_title_y": "China: Second Thomas Shoal",
+        "rank": 3,
+        "row_r2_max": 0.07105161277669256,
+        "cell_label": "0.25\n1394-0"
+      },
+      {
+        "ifp_id_x": "1416-0",
+        "ifp_id_y": "1427-0",
+        "corr": 0.26640740849108774,
+        "r2": 0.0709729072989373,
+        "short_title_x": "North Korea nuclear device",
+        "short_title_y": "Russia annexation of Ukraine",
+        "rank": 2,
+        "row_r2_max": 0.07105161277669256,
+        "cell_label": "0.27\n1427-0"
+      },
+      {
+        "ifp_id_x": "1416-0",
+        "ifp_id_y": "1399-2",
+        "corr": 0.1875362834078975,
+        "r2": 0.03516985759444725,
+        "short_title_x": "North Korea nuclear device",
+        "short_title_y": "Quebec Referendum",
+        "rank": 6,
+        "row_r2_max": 0.07105161277669256,
+        "cell_label": "0.19\n1399-2"
+      },
+      {
+        "ifp_id_x": "1416-0",
+        "ifp_id_y": "1409-0",
+        "corr": -0.09109707034796377,
+        "r2": 0.00829867622598186,
+        "short_title_x": "North Korea nuclear device",
+        "short_title_y": "Brazil Presidential Runoff",
+        "rank": 8,
+        "row_r2_max": 0.07105161277669256,
+        "cell_label": "-0.09\n1409-0"
+      },
+      {
+        "ifp_id_x": "1416-0",
+        "ifp_id_y": "1413-0",
+        "corr": 0.2665550839445621,
+        "r2": 0.07105161277669256,
+        "short_title_x": "North Korea nuclear device",
+        "short_title_y": "Kurdistan Referendum",
+        "rank": 1,
+        "row_r2_max": 0.07105161277669256,
+        "cell_label": "0.27\n1413-0"
+      },
+      {
+        "ifp_id_x": "1416-0",
+        "ifp_id_y": "1417-0",
+        "corr": 0.18807613691201888,
+        "r2": 0.03537263327574847,
+        "short_title_x": "North Korea nuclear device",
+        "short_title_y": "Kim Jong Un meeting head of state ",
+        "rank": 5,
+        "row_r2_max": 0.07105161277669256,
+        "cell_label": "0.19\n1417-0"
+      },
+      {
+        "ifp_id_x": "1409-0",
+        "ifp_id_y": "1244-0",
+        "corr": -0.18952550554102804,
+        "r2": 0.03591991725058225,
+        "short_title_x": "Brazil Presidential Runoff",
+        "short_title_y": "India/Brazil UNSC",
+        "rank": 2,
+        "row_r2_max": 0.0378122834105674,
+        "cell_label": "-0.19\n1244-0"
+      },
+      {
+        "ifp_id_x": "1409-0",
+        "ifp_id_y": "1410-0",
+        "corr": -0.16204974892575805,
+        "r2": 0.026260121126901223,
+        "short_title_x": "Brazil Presidential Runoff",
+        "short_title_y": "Scotland Referendum",
+        "rank": 3,
+        "row_r2_max": 0.0378122834105674,
+        "cell_label": "-0.16\n1410-0"
+      },
+      {
+        "ifp_id_x": "1409-0",
+        "ifp_id_y": "1414-0",
+        "corr": -0.10189466330280073,
+        "r2": 0.010382522409591125,
+        "short_title_x": "Brazil Presidential Runoff",
+        "short_title_y": "Arctic Sea Ice",
+        "rank": 6,
+        "row_r2_max": 0.0378122834105674,
+        "cell_label": "-0.1\n1414-0"
+      },
+      {
+        "ifp_id_x": "1409-0",
+        "ifp_id_y": "1394-0",
+        "corr": -0.09088896198017933,
+        "r2": 0.008260803409834485,
+        "short_title_x": "Brazil Presidential Runoff",
+        "short_title_y": "China: Second Thomas Shoal",
+        "rank": 8,
+        "row_r2_max": 0.0378122834105674,
+        "cell_label": "-0.09\n1394-0"
+      },
+      {
+        "ifp_id_x": "1409-0",
+        "ifp_id_y": "1427-0",
+        "corr": -0.13584529093758424,
+        "r2": 0.018453943069916906,
+        "short_title_x": "Brazil Presidential Runoff",
+        "short_title_y": "Russia annexation of Ukraine",
+        "rank": 4,
+        "row_r2_max": 0.0378122834105674,
+        "cell_label": "-0.14\n1427-0"
+      },
+      {
+        "ifp_id_x": "1409-0",
+        "ifp_id_y": "1399-2",
+        "corr": -0.19445380790966116,
+        "r2": 0.0378122834105674,
+        "short_title_x": "Brazil Presidential Runoff",
+        "short_title_y": "Quebec Referendum",
+        "rank": 1,
+        "row_r2_max": 0.0378122834105674,
+        "cell_label": "-0.19\n1399-2"
+      },
+      {
+        "ifp_id_x": "1409-0",
+        "ifp_id_y": "1416-0",
+        "corr": -0.09109707034796377,
+        "r2": 0.00829867622598186,
+        "short_title_x": "Brazil Presidential Runoff",
+        "short_title_y": "North Korea nuclear device",
+        "rank": 7,
+        "row_r2_max": 0.0378122834105674,
+        "cell_label": "-0.09\n1416-0"
+      },
+      {
+        "ifp_id_x": "1409-0",
+        "ifp_id_y": "1413-0",
+        "corr": -0.1328424794630068,
+        "r2": 0.017647124349879386,
+        "short_title_x": "Brazil Presidential Runoff",
+        "short_title_y": "Kurdistan Referendum",
+        "rank": 5,
+        "row_r2_max": 0.0378122834105674,
+        "cell_label": "-0.13\n1413-0"
+      },
+      {
+        "ifp_id_x": "1409-0",
+        "ifp_id_y": "1417-0",
+        "corr": -0.048803377414266776,
+        "r2": 0.0023817696470393645,
+        "short_title_x": "Brazil Presidential Runoff",
+        "short_title_y": "Kim Jong Un meeting head of state ",
+        "rank": 9,
+        "row_r2_max": 0.0378122834105674,
+        "cell_label": "-0.05\n1417-0"
+      },
+      {
+        "ifp_id_x": "1413-0",
+        "ifp_id_y": "1244-0",
+        "corr": 0.26055175520135637,
+        "r2": 0.06788721713850754,
+        "short_title_x": "Kurdistan Referendum",
+        "short_title_y": "India/Brazil UNSC",
+        "rank": 4,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.26\n1244-0"
+      },
+      {
+        "ifp_id_x": "1413-0",
+        "ifp_id_y": "1410-0",
+        "corr": 0.15904764988087555,
+        "r2": 0.025296154932629572,
+        "short_title_x": "Kurdistan Referendum",
+        "short_title_y": "Scotland Referendum",
+        "rank": 6,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.16\n1410-0"
+      },
+      {
+        "ifp_id_x": "1413-0",
+        "ifp_id_y": "1414-0",
+        "corr": 0.10290819635152501,
+        "r2": 0.010590096876324026,
+        "short_title_x": "Kurdistan Referendum",
+        "short_title_y": "Arctic Sea Ice",
+        "rank": 9,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.1\n1414-0"
+      },
+      {
+        "ifp_id_x": "1413-0",
+        "ifp_id_y": "1394-0",
+        "corr": 0.27016464575159693,
+        "r2": 0.07298893581408586,
+        "short_title_x": "Kurdistan Referendum",
+        "short_title_y": "China: Second Thomas Shoal",
+        "rank": 2,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.27\n1394-0"
+      },
+      {
+        "ifp_id_x": "1413-0",
+        "ifp_id_y": "1427-0",
+        "corr": 0.30522212099608387,
+        "r2": 0.09316054314534807,
+        "short_title_x": "Kurdistan Referendum",
+        "short_title_y": "Russia annexation of Ukraine",
+        "rank": 1,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.31\n1427-0"
+      },
+      {
+        "ifp_id_x": "1413-0",
+        "ifp_id_y": "1399-2",
+        "corr": 0.2573882951169821,
+        "r2": 0.06624873446322666,
+        "short_title_x": "Kurdistan Referendum",
+        "short_title_y": "Quebec Referendum",
+        "rank": 5,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.26\n1399-2"
+      },
+      {
+        "ifp_id_x": "1413-0",
+        "ifp_id_y": "1416-0",
+        "corr": 0.2665550839445621,
+        "r2": 0.07105161277669256,
+        "short_title_x": "Kurdistan Referendum",
+        "short_title_y": "North Korea nuclear device",
+        "rank": 3,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.27\n1416-0"
+      },
+      {
+        "ifp_id_x": "1413-0",
+        "ifp_id_y": "1409-0",
+        "corr": -0.1328424794630068,
+        "r2": 0.017647124349879386,
+        "short_title_x": "Kurdistan Referendum",
+        "short_title_y": "Brazil Presidential Runoff",
+        "rank": 7,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "-0.13\n1409-0"
+      },
+      {
+        "ifp_id_x": "1413-0",
+        "ifp_id_y": "1417-0",
+        "corr": 0.11715884729957951,
+        "r2": 0.01372619550056619,
+        "short_title_x": "Kurdistan Referendum",
+        "short_title_y": "Kim Jong Un meeting head of state ",
+        "rank": 8,
+        "row_r2_max": 0.09316054314534807,
+        "cell_label": "0.12\n1417-0"
+      },
+      {
+        "ifp_id_x": "1417-0",
+        "ifp_id_y": "1244-0",
+        "corr": 0.0757052897985199,
+        "r2": 0.005731290903477881,
+        "short_title_x": "Kim Jong Un meeting head of state ",
+        "short_title_y": "India/Brazil UNSC",
+        "rank": 5,
+        "row_r2_max": 0.03537263327574847,
+        "cell_label": "0.08\n1244-0"
+      },
+      {
+        "ifp_id_x": "1417-0",
+        "ifp_id_y": "1410-0",
+        "corr": 0.08446018184952883,
+        "r2": 0.007133522318055479,
+        "short_title_x": "Kim Jong Un meeting head of state ",
+        "short_title_y": "Scotland Referendum",
+        "rank": 4,
+        "row_r2_max": 0.03537263327574847,
+        "cell_label": "0.08\n1410-0"
+      },
+      {
+        "ifp_id_x": "1417-0",
+        "ifp_id_y": "1414-0",
+        "corr": 0.06815688952377373,
+        "r2": 0.004645361589555898,
+        "short_title_x": "Kim Jong Un meeting head of state ",
+        "short_title_y": "Arctic Sea Ice",
+        "rank": 8,
+        "row_r2_max": 0.03537263327574847,
+        "cell_label": "0.07\n1414-0"
+      },
+      {
+        "ifp_id_x": "1417-0",
+        "ifp_id_y": "1394-0",
+        "corr": 0.06926987255053943,
+        "r2": 0.004798315243167976,
+        "short_title_x": "Kim Jong Un meeting head of state ",
+        "short_title_y": "China: Second Thomas Shoal",
+        "rank": 7,
+        "row_r2_max": 0.03537263327574847,
+        "cell_label": "0.07\n1394-0"
+      },
+      {
+        "ifp_id_x": "1417-0",
+        "ifp_id_y": "1427-0",
+        "corr": 0.10028188577238409,
+        "r2": 0.01005645661406549,
+        "short_title_x": "Kim Jong Un meeting head of state ",
+        "short_title_y": "Russia annexation of Ukraine",
+        "rank": 3,
+        "row_r2_max": 0.03537263327574847,
+        "cell_label": "0.1\n1427-0"
+      },
+      {
+        "ifp_id_x": "1417-0",
+        "ifp_id_y": "1399-2",
+        "corr": 0.07460113335284514,
+        "r2": 0.005565329097528984,
+        "short_title_x": "Kim Jong Un meeting head of state ",
+        "short_title_y": "Quebec Referendum",
+        "rank": 6,
+        "row_r2_max": 0.03537263327574847,
+        "cell_label": "0.07\n1399-2"
+      },
+      {
+        "ifp_id_x": "1417-0",
+        "ifp_id_y": "1416-0",
+        "corr": 0.18807613691201888,
+        "r2": 0.03537263327574847,
+        "short_title_x": "Kim Jong Un meeting head of state ",
+        "short_title_y": "North Korea nuclear device",
+        "rank": 1,
+        "row_r2_max": 0.03537263327574847,
+        "cell_label": "0.19\n1416-0"
+      },
+      {
+        "ifp_id_x": "1417-0",
+        "ifp_id_y": "1409-0",
+        "corr": -0.04880337741426678,
+        "r2": 0.002381769647039365,
+        "short_title_x": "Kim Jong Un meeting head of state ",
+        "short_title_y": "Brazil Presidential Runoff",
+        "rank": 9,
+        "row_r2_max": 0.03537263327574847,
+        "cell_label": "-0.05\n1409-0"
+      },
+      {
+        "ifp_id_x": "1417-0",
+        "ifp_id_y": "1413-0",
+        "corr": 0.1171588472995795,
+        "r2": 0.013726195500566186,
+        "short_title_x": "Kim Jong Un meeting head of state ",
+        "short_title_y": "Kurdistan Referendum",
+        "rank": 2,
+        "row_r2_max": 0.03537263327574847,
+        "cell_label": "0.12\n1413-0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2008 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "axis": {
+      "grid": false
+    },
+    "title": {
+      "fontSize": 18
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect"
+      },
+      "encoding": {
+        "color": {
+          "field": "corr",
+          "scale": {
+            "domain": [
+              -1,
+              1
+            ],
+            "scheme": "redblue"
+          },
+          "title": "corr",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "ifp_id_x",
+            "title": "IFP (row)",
+            "type": "nominal"
+          },
+          {
+            "field": "short_title_x",
+            "title": "Title (row)",
+            "type": "nominal"
+          },
+          {
+            "field": "ifp_id_y",
+            "title": "IFP (col)",
+            "type": "nominal"
+          },
+          {
+            "field": "short_title_y",
+            "title": "Title (col)",
+            "type": "nominal"
+          },
+          {
+            "field": "corr",
+            "format": ".3f",
+            "title": "corr",
+            "type": "quantitative"
+          },
+          {
+            "field": "r2",
+            "format": ".3f",
+            "title": "corr^2",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labelAngle": 90,
+            "labelFontSize": 10,
+            "labelLimit": 60
+          },
+          "field": "ifp_id_y",
+          "sort": [
+            "1011-0",
+            "1010-0",
+            "1018-0",
+            "1015-0",
+            "1005-0",
+            "1016-0",
+            "1012-0",
+            "1013-0",
+            "1017-0",
+            "1001-0",
+            "1006-0",
+            "1020-0",
+            "1003-0",
+            "1004-0",
+            "1008-0"
+          ],
+          "title": null,
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {
+            "labelFontSize": 10,
+            "labelLimit": 60
+          },
+          "field": "ifp_id_x",
+          "sort": [
+            "1011-0",
+            "1010-0",
+            "1018-0",
+            "1015-0",
+            "1005-0",
+            "1016-0",
+            "1012-0",
+            "1013-0",
+            "1017-0",
+            "1001-0",
+            "1006-0",
+            "1020-0",
+            "1003-0",
+            "1004-0",
+            "1008-0"
+          ],
+          "title": null,
+          "type": "nominal"
+        }
+      },
+      "name": "view_9da3cc642a023d58_0"
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "datum.r2 > 0.36",
+            "value": "white"
+          },
+          "value": "black"
+        },
+        "text": {
+          "field": "corr",
+          "format": ".2f",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "ifp_id_y",
+          "sort": [
+            "1011-0",
+            "1010-0",
+            "1018-0",
+            "1015-0",
+            "1005-0",
+            "1016-0",
+            "1012-0",
+            "1013-0",
+            "1017-0",
+            "1001-0",
+            "1006-0",
+            "1020-0",
+            "1003-0",
+            "1004-0",
+            "1008-0"
+          ],
+          "type": "nominal"
+        },
+        "y": {
+          "field": "ifp_id_x",
+          "sort": [
+            "1011-0",
+            "1010-0",
+            "1018-0",
+            "1015-0",
+            "1005-0",
+            "1016-0",
+            "1012-0",
+            "1013-0",
+            "1017-0",
+            "1001-0",
+            "1006-0",
+            "1020-0",
+            "1003-0",
+            "1004-0",
+            "1008-0"
+          ],
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-3b2260f7e1d2b51420cb29bd9fafa694"
+  },
+  "height": 800,
+  "params": [
+    {
+      "name": "param_f268f798f41c853e",
+      "select": {
+        "type": "interval"
+      },
+      "bind": "scales",
+      "views": [
+        "view_9da3cc642a023d58_0"
+      ]
+    }
+  ],
+  "title": "IFP Correlation Coefficients Matrix",
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-3b2260f7e1d2b51420cb29bd9fafa694": [
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1001-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.12574503172562168,
+        "r2": 0.015811813003677604,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.061103147407551905,
+        "r2": 0.0037335946231090173,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.12893851814886162,
+        "r2": 0.016625141462424317,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.18671092878429668,
+        "r2": 0.034860970927494704,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.026563308609372848,
+        "r2": 0.0007056093642767816,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.13067217836338577,
+        "r2": 0.017075218198232503,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.21266416362989685,
+        "r2": 0.04522604649240354,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.1267296568229922,
+        "r2": 0.016060405918473374,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1013-0",
+        "corr": -0.026103536782457575,
+        "r2": 0.0006813946325531156,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.10947048049021503,
+        "r2": 0.01198378609875855,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1016-0",
+        "corr": -0.10441103395071187,
+        "r2": 0.010901664010656707,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.13362539867900883,
+        "r2": 0.017855747172124053,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.159831151309296,
+        "r2": 0.025545996928855074,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1001-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.1712950612327634,
+        "r2": 0.02934199800273616,
+        "short_title_x": "Six-party talks resume",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.12574503172562168,
+        "r2": 0.015811813003677604,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1003-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.1646105243623046,
+        "r2": 0.02709662473083288,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.013654341144423172,
+        "r2": 0.00018644103208828748,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.04080450761564962,
+        "r2": 0.0016650078417556077,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.09874888135501883,
+        "r2": 0.009751341568867585,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.03317149614772193,
+        "r2": 0.0011003481566783306,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.03647126455960967,
+        "r2": 0.0013301531385770402,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.04984433664486212,
+        "r2": 0.0024844578955663444,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1013-0",
+        "corr": -0.025131044081063893,
+        "r2": 0.0006315693766043766,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.13404677730858391,
+        "r2": 0.017968538506817087,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1016-0",
+        "corr": 0.018304900751583454,
+        "r2": 0.0003350693915253205,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.0605292636906473,
+        "r2": 0.003663791762931914,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.05691839596825212,
+        "r2": 0.0032397037995987392,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1003-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.05070373608771425,
+        "r2": 0.0025708688532525767,
+        "short_title_x": "Serbia EU candidacy",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.061103147407551905,
+        "r2": 0.0037335946231090173,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.1646105243623046,
+        "r2": 0.02709662473083288,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1004-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.0048161502456746585,
+        "r2": 2.3195303188912074e-05,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1006-0",
+        "corr": -0.029936630407046524,
+        "r2": 0.0008962018401281025,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.043469380835457774,
+        "r2": 0.0018895870702180636,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.10837090268444532,
+        "r2": 0.01174425254864152,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.08698660900275443,
+        "r2": 0.007566670145798078,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.07130016464084916,
+        "r2": 0.005083713477812198,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1013-0",
+        "corr": 0.04713541027851917,
+        "r2": 0.0022217469021243307,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.07655646566950415,
+        "r2": 0.005860892435805967,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1016-0",
+        "corr": 0.10243172256697525,
+        "r2": 0.010492257788037786,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.034010547962491935,
+        "r2": 0.0011567173727089644,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.04699399698736084,
+        "r2": 0.00220843575284808,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1004-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.04593954042519785,
+        "r2": 0.0021104413744783873,
+        "short_title_x": "UN-GA recognize Palestine",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1001-0",
+        "corr": -0.12893851814886162,
+        "r2": 0.016625141462424317,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1003-0",
+        "corr": -0.013654341144423165,
+        "r2": 0.0001864410320882873,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1004-0",
+        "corr": -0.00481615024567466,
+        "r2": 2.319530318891209e-05,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1005-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1006-0",
+        "corr": -0.1412166249862142,
+        "r2": 0.019942135172497058,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.04626877991003065,
+        "r2": 0.002140799994362856,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1010-0",
+        "corr": -0.07638723912760986,
+        "r2": 0.0058350103015386515,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1011-0",
+        "corr": -0.14995833457288354,
+        "r2": 0.02248750210787288,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1012-0",
+        "corr": -0.14163745146307877,
+        "r2": 0.020061167656955994,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1013-0",
+        "corr": -0.012500063481608197,
+        "r2": 0.00015625158704423483,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1015-0",
+        "corr": -0.14204121717230128,
+        "r2": 0.020175707375788856,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1016-0",
+        "corr": 0.25554294922674187,
+        "r2": 0.06530219889950117,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1017-0",
+        "corr": -0.0956375829407857,
+        "r2": 0.009146547270755664,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1018-0",
+        "corr": -0.20827915482607315,
+        "r2": 0.04338020633506335,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1005-0",
+        "ifp_id_y": "1020-0",
+        "corr": -0.14543131577008264,
+        "r2": 0.02115026760661749,
+        "short_title_x": "Ortega win in Nicaragua",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.18671092878429668,
+        "r2": 0.034860970927494704,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.04080450761564962,
+        "r2": 0.0016650078417556077,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1004-0",
+        "corr": -0.029936630407046524,
+        "r2": 0.0008962018401281025,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.1412166249862142,
+        "r2": 0.019942135172497058,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1006-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.10681587197245887,
+        "r2": 0.011409630505236724,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.06740764633408733,
+        "r2": 0.004543790784301397,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.1293849507349913,
+        "r2": 0.016740465476696123,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.19446492841482457,
+        "r2": 0.03781660838338285,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1013-0",
+        "corr": 0.06740243534495612,
+        "r2": 0.00454308829043099,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.09112599947937523,
+        "r2": 0.008303947781115095,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1016-0",
+        "corr": -0.1782424189357068,
+        "r2": 0.031770359908052014,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.035588242657893496,
+        "r2": 0.0012665230154771103,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.13598117539816504,
+        "r2": 0.018490880062666526,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1006-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.13363101736641078,
+        "r2": 0.01785724880238198,
+        "short_title_x": "Italy restructure debt",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.026563308609372855,
+        "r2": 0.0007056093642767821,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.09874888135501882,
+        "r2": 0.009751341568867583,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.043469380835457774,
+        "r2": 0.0018895870702180636,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1005-0",
+        "corr": 0.046268779910030665,
+        "r2": 0.0021407999943628573,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.10681587197245887,
+        "r2": 0.011409630505236724,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1008-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1010-0",
+        "corr": -0.009584608522748549,
+        "r2": 9.186472053434412e-05,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.06542476291312385,
+        "r2": 0.004280399602238466,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.09351360698718957,
+        "r2": 0.00874479469175455,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1013-0",
+        "corr": 0.006383831634319479,
+        "r2": 4.075330633533811e-05,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.09129958884460489,
+        "r2": 0.008335614923193901,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1016-0",
+        "corr": -0.027725450831195538,
+        "r2": 0.0007687006237930414,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.0687234635638312,
+        "r2": 0.004722914444209235,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.021477227655379905,
+        "r2": 0.00046127130776101537,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1008-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.0609100305035591,
+        "r2": 0.0037100318159445003,
+        "short_title_x": "WTO membership for Russia",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.13067217836338577,
+        "r2": 0.017075218198232503,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.03317149614772193,
+        "r2": 0.0011003481566783306,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.10837090268444532,
+        "r2": 0.01174425254864152,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.07638723912760984,
+        "r2": 0.005835010301538647,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.06740764633408734,
+        "r2": 0.004543790784301399,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1008-0",
+        "corr": -0.009584608522748544,
+        "r2": 9.186472053434402e-05,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1010-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.27988478928855065,
+        "r2": 0.0783354952750964,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.18793783431138145,
+        "r2": 0.03532062956565227,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1013-0",
+        "corr": 0.21582727642671173,
+        "r2": 0.04658141324977224,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.14348886941749742,
+        "r2": 0.020589055646711624,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1016-0",
+        "corr": 0.008722003236328298,
+        "r2": 7.60733404545213e-05,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.07455420021713392,
+        "r2": 0.005558328770016492,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.2081367740349192,
+        "r2": 0.043320916705663015,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1010-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.09112050260261094,
+        "r2": 0.008302945994552427,
+        "short_title_x": "Crude oil exceed $115",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.21266416362989685,
+        "r2": 0.04522604649240354,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.036471264559609654,
+        "r2": 0.001330153138577039,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.08698660900275443,
+        "r2": 0.007566670145798078,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.14995833457288354,
+        "r2": 0.02248750210787288,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.1293849507349913,
+        "r2": 0.016740465476696123,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.06542476291312384,
+        "r2": 0.004280399602238465,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.27988478928855065,
+        "r2": 0.0783354952750964,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1011-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.2417241173840113,
+        "r2": 0.058430548925079276,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1013-0",
+        "corr": 0.1120249242897352,
+        "r2": 0.012549583662120905,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.1809158641810212,
+        "r2": 0.032730549912365715,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1016-0",
+        "corr": -0.10668053621548462,
+        "r2": 0.011380736807223325,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.1342067143200166,
+        "r2": 0.01801144216857455,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.22337120694535978,
+        "r2": 0.04989469609222674,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1011-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.16114580379523555,
+        "r2": 0.02596797008081255,
+        "short_title_x": "Nikkei above 9,500",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.12672965682299217,
+        "r2": 0.016060405918473367,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.04984433664486212,
+        "r2": 0.0024844578955663444,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.07130016464084916,
+        "r2": 0.005083713477812198,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.14163745146307877,
+        "r2": 0.020061167656955994,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.19446492841482457,
+        "r2": 0.03781660838338285,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.09351360698718955,
+        "r2": 0.008744794691754546,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.18793783431138145,
+        "r2": 0.03532062956565227,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.2417241173840113,
+        "r2": 0.058430548925079276,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1012-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1013-0",
+        "corr": 0.123094581149899,
+        "r2": 0.01515227590846907,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.22917872487506782,
+        "r2": 0.05252288793536203,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1016-0",
+        "corr": -0.09268789718184292,
+        "r2": 0.008591046283991885,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.2136230014708951,
+        "r2": 0.04563478675743406,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.22130460704923263,
+        "r2": 0.04897572910121527,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1012-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.1293194636892998,
+        "r2": 0.01672352368888813,
+        "short_title_x": "Berlusconi vacate office",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1001-0",
+        "corr": -0.026103536782457564,
+        "r2": 0.000681394632553115,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1003-0",
+        "corr": -0.025131044081063883,
+        "r2": 0.0006315693766043761,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.04713541027851917,
+        "r2": 0.0022217469021243307,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.012500063481608197,
+        "r2": 0.00015625158704423483,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.06740243534495612,
+        "r2": 0.00454308829043099,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.006383831634319479,
+        "r2": 4.075330633533811e-05,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.21582727642671173,
+        "r2": 0.04658141324977224,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.11202492428973523,
+        "r2": 0.012549583662120911,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.12309458114989905,
+        "r2": 0.015152275908469081,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1013-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.1157692070579379,
+        "r2": 0.0134025093028237,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1016-0",
+        "corr": 0.06189858502220863,
+        "r2": 0.0038314348277515907,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.05052984476412116,
+        "r2": 0.0025532652118861825,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.14679204661478917,
+        "r2": 0.02154790494935844,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1013-0",
+        "ifp_id_y": "1020-0",
+        "corr": -0.02047226650004456,
+        "r2": 0.0004191136956488468,
+        "short_title_x": "Gold exceed $1850",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.10947048049021502,
+        "r2": 0.011983786098758546,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.13404677730858391,
+        "r2": 0.017968538506817087,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.07655646566950416,
+        "r2": 0.00586089243580597,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.14204121717230128,
+        "r2": 0.020175707375788856,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.09112599947937523,
+        "r2": 0.008303947781115095,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.09129958884460487,
+        "r2": 0.008335614923193898,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.14348886941749742,
+        "r2": 0.020589055646711624,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.1809158641810212,
+        "r2": 0.032730549912365715,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.22917872487506782,
+        "r2": 0.05252288793536203,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1013-0",
+        "corr": 0.1157692070579379,
+        "r2": 0.0134025093028237,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1015-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1016-0",
+        "corr": -0.08299356365523115,
+        "r2": 0.006887931608194906,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.19773427732924712,
+        "r2": 0.03909884443091961,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.2593501834476992,
+        "r2": 0.06726251765435524,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1015-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.15126693635584143,
+        "r2": 0.022881686034482183,
+        "short_title_x": "Israel's ambassador to Turkey",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1001-0",
+        "corr": -0.10441103395071187,
+        "r2": 0.010901664010656707,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.018304900751583458,
+        "r2": 0.00033506939152532064,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.10243172256697525,
+        "r2": 0.010492257788037786,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1005-0",
+        "corr": 0.25554294922674187,
+        "r2": 0.06530219889950117,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1006-0",
+        "corr": -0.17824241893570678,
+        "r2": 0.031770359908052,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1008-0",
+        "corr": -0.02772545083119555,
+        "r2": 0.0007687006237930419,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.008722003236328303,
+        "r2": 7.607334045452139e-05,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1011-0",
+        "corr": -0.10668053621548462,
+        "r2": 0.011380736807223325,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1012-0",
+        "corr": -0.09268789718184291,
+        "r2": 0.008591046283991882,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1013-0",
+        "corr": 0.06189858502220864,
+        "r2": 0.0038314348277515915,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1015-0",
+        "corr": -0.08299356365523115,
+        "r2": 0.006887931608194906,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1016-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1017-0",
+        "corr": -0.05540830906920185,
+        "r2": 0.003070080713908196,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1018-0",
+        "corr": -0.167764343754329,
+        "r2": 0.028144875035320666,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1016-0",
+        "ifp_id_y": "1020-0",
+        "corr": -0.032703636145656675,
+        "r2": 0.0010695278171475018,
+        "short_title_x": "CPP majority in Poland",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.13362539867900883,
+        "r2": 0.017855747172124053,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.0605292636906473,
+        "r2": 0.003663791762931914,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.03401054796249195,
+        "r2": 0.0011567173727089653,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.09563758294078573,
+        "r2": 0.00914654727075567,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.035588242657893496,
+        "r2": 0.0012665230154771103,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.0687234635638312,
+        "r2": 0.004722914444209235,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.07455420021713392,
+        "r2": 0.005558328770016492,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.1342067143200166,
+        "r2": 0.01801144216857455,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.2136230014708951,
+        "r2": 0.04563478675743406,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1013-0",
+        "corr": 0.05052984476412116,
+        "r2": 0.0025532652118861825,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.19773427732924712,
+        "r2": 0.03909884443091961,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1016-0",
+        "corr": -0.05540830906920184,
+        "r2": 0.003070080713908195,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1017-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.19620390055037135,
+        "r2": 0.03849597059118001,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1017-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.08504919735176518,
+        "r2": 0.007233365970179501,
+        "short_title_x": "Mugabe vacate presidency",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.15983115130929598,
+        "r2": 0.025545996928855067,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.0569183959682521,
+        "r2": 0.003239703799598737,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.04699399698736084,
+        "r2": 0.00220843575284808,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.20827915482607315,
+        "r2": 0.04338020633506335,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.13598117539816504,
+        "r2": 0.018490880062666526,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.021477227655379905,
+        "r2": 0.00046127130776101537,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.2081367740349192,
+        "r2": 0.043320916705663015,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.22337120694535978,
+        "r2": 0.04989469609222674,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.22130460704923266,
+        "r2": 0.048975729101215275,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1013-0",
+        "corr": 0.14679204661478917,
+        "r2": 0.02154790494935844,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.2593501834476993,
+        "r2": 0.06726251765435527,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1016-0",
+        "corr": -0.167764343754329,
+        "r2": 0.028144875035320666,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.19620390055037135,
+        "r2": 0.03849597059118001,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1018-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1018-0",
+        "ifp_id_y": "1020-0",
+        "corr": 0.111929072758425,
+        "r2": 0.012528117328560797,
+        "short_title_x": "Al-Sadr withdraw support of Iraqi govt",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1001-0",
+        "corr": 0.17129506123276333,
+        "r2": 0.02934199800273614,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Six-party talks resume"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1003-0",
+        "corr": 0.05070373608771425,
+        "r2": 0.0025708688532525767,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Serbia EU candidacy"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1004-0",
+        "corr": 0.04593954042519785,
+        "r2": 0.0021104413744783873,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "UN-GA recognize Palestine"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1005-0",
+        "corr": -0.14543131577008264,
+        "r2": 0.02115026760661749,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Ortega win in Nicaragua"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1006-0",
+        "corr": 0.13363101736641075,
+        "r2": 0.017857248802381973,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Italy restructure debt"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1008-0",
+        "corr": 0.0609100305035591,
+        "r2": 0.0037100318159445003,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "WTO membership for Russia"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1010-0",
+        "corr": 0.09112050260261094,
+        "r2": 0.008302945994552427,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Crude oil exceed $115"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1011-0",
+        "corr": 0.16114580379523558,
+        "r2": 0.02596797008081256,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Nikkei above 9,500"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1012-0",
+        "corr": 0.12931946368929984,
+        "r2": 0.016723523688888138,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Berlusconi vacate office"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1013-0",
+        "corr": -0.020472266500044554,
+        "r2": 0.0004191136956488465,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Gold exceed $1850"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1015-0",
+        "corr": 0.15126693635584146,
+        "r2": 0.02288168603448219,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Israel's ambassador to Turkey"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1016-0",
+        "corr": -0.032703636145656675,
+        "r2": 0.0010695278171475018,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "CPP majority in Poland"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1017-0",
+        "corr": 0.08504919735176518,
+        "r2": 0.007233365970179501,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Mugabe vacate presidency"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1018-0",
+        "corr": 0.11192907275842501,
+        "r2": 0.012528117328560798,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Al-Sadr withdraw support of Iraqi govt"
+      },
+      {
+        "ifp_id_x": "1020-0",
+        "ifp_id_y": "1020-0",
+        "corr": 1.0,
+        "r2": 1.0,
+        "short_title_x": "Israel-Palestine peace talks resume",
+        "short_title_y": "Israel-Palestine peace talks resume"
+      }
+    ]
+  }
+}
